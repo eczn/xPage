@@ -4,14 +4,33 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/memu.css">
 </head>
 <body>
 	<div class="nav">招贤纳士</div>
+	
+	<div id="memu-btn">memu</div>
+	<div id="memu">
+		<div class="memu-item" id="introdution">自我介绍</div>
+		<div class="memu-item" id="join-us">加入我们</div>
+		<div class="memu-item"></div>
+		<div class="memu-item"></div>
+	</div>
 	<center><canvas id="clock"></canvas></center>
 </body>
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 <script type="text/javascript" src="js/jClock.js"></script>
+<script type="text/javascript" src="js/xbtn.js"></script>
 <script type="text/javascript">
-	var myClock = new jClock('clock');
-	myClock.jClocking();
+
+	$(document).ready(function(){
+		var myClock = new jClock('clock');
+		var myMemu = new memuInit("memu-btn","memu"); 
+
+		$("#memu-btn").click(myMemu.click); 
+
+		myClock.jClocking();
+	}); 
+
 </script>
 </html>
