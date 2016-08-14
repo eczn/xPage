@@ -63,7 +63,9 @@ function jClock(canvasId){
 			myMin = temp.getMinutes(), 
 			myHour= temp.getHours(); 
 		
-		paint((PI*mySec/30)-PI/2, (PI*(myMin+mySec/60)/30)-PI/2, (PI*(myHour+myMin/60)/30)-PI/2); 
+		paint((PI*mySec/30)-PI/2, (PI*(myMin+mySec/60)/30)-PI/2, (PI*(myHour+myMin/60)/30)*5-PI/2); 
+		console.log(myHour);
+
 		setTimeout(jClocking,1000); 
 	}
 
