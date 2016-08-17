@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>node learn</title>
+	<script type="text/javascript" src="http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="it.css">
+</head>
+<body>
+	
+	<div class="name"><input placeholder="...." type="text"></div>
+	
+	<div class="phone"><input placeholder="11位" type="tel"></div>
+	
+	<div class="intro"><textarea placeholder="别太长...256字以内" type="text"></textarea></div>
+	
+	<div id="sent"><p>点击发送</p></div>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#sent").click(function(){
+		var name = $(".name input").val(); 
+		var phone = $(".phone input").val(); 
+		var intro = $("textarea").val();
+
+		if (phone.length != 11){
+			alert("手机号太短啦");
+			return; 
+		} else if (intro.length > 255) {
+			alert("个人介绍似乎有点长了...");
+			return; 
+		}
+
+		$.ajax({
+			type: 'post',
+			async: true,
+			url: "http://eczn.website:8086", 
+			data: {
+				name: name,
+				phone: phone,
+				intro: intro
+			},
+			dataType: 'json',
+			success: function(data){
+				console.log(data);
+				console.log("success");
+				alert("成功了好像..."); 
+			},
+			error: function(data){
+				console.warn("faild");
+				console.log("居然失败了233... ");
+				console.log(data); 
+			}
+		});
+
+	});
+});
+
+</script>
+</html>
