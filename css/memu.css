@@ -78,3 +78,21 @@
 	height: 50%;
 	margin: 5% 0 0 20px;
 }
+
+#return {
+	z-index: 999;
+	cursor: pointer;
+	background-color: #222;
+	height: 30px;
+	width: 20%;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	left: 0;
+	color: white;
+}
+
+#return:active {
+	color: black;
+	font-size: 14px;
+}
