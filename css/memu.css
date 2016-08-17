@@ -14,7 +14,12 @@
 	z-index: 999; 
 }
 
+#memu-btn:active {
+	color: black; 
+}
+
 #memu {
+	z-index: 990; 
 	display: none; 
 	/*opacity: 0;*/
 	position: fixed;
@@ -23,16 +28,41 @@
 }
 
 .memu-item {
+
 	height: 25%;
 	width: 100%;
 
+	color: white;
+	cursor: pointer;
 	background-color: #000; 
-	opacity: 0.5; 
+	opacity: 0.5;
 
+	/*-webkit-transition: width 2s;*/
+	transform-origin:0% 0%;
+	-webkit-transform: rotateY(0deg);	
+	-webkit-transition: -webkit-transform 1s;
 }
+
 
 .memu-item:nth-child(odd){
 	background-color: #000; 
 	opacity: 0.4; 
 }
 
+.memu-item:active {
+	transform-origin:0% 0%;
+	
+	-webkit-transform: rotateY(60deg);
+
+
+/*	width: 70%; 
+	-webkit-transition: width 2s;
+*/
+	-webkit-transition: -webkit-transform 1s;
+}
+
+.memu-item > h1 {
+	position: absolute;
+	height: 50%;
+	margin: 5% 0 0 20px;
+}

@@ -10,7 +10,7 @@ function memuInit(btnId,memu){
 		if (status == 0){
 			status = 1;
 			$memu.css('display','block').animate({ opacity: 1 },800);
-
+			// $(".memu-item").addClass("memu-item-active");
 		} else if (status == 1){
 			status = 0; 
 			// $memu.css('display','none');
