@@ -19,12 +19,14 @@
 	<br/>
 	<!-- <center style="font-size: 40px;" >↑</center> -->
 
-	<div id="memu-btn">memu</div>
-	<div id="memu">
-		<div class="memu-item" id="introdution"><h1>自我介绍</h1></div>
-		<div class="memu-item" id="join-us"><h1>加入我们</h1></div>
-		<div class="memu-item"></div>
-		<div class="memu-item"></div>
+	<div id="memu-btn">
+		memu
+		<div id="memu">
+			<div class="memu-item" id="introdution"><h1>自我介绍</h1></div>
+			<div class="memu-item" id="join-us"><h1>加入我们</h1></div>
+			<div class="memu-item"></div>
+			<div class="memu-item"></div>
+		</div>
 	</div>
 
 	<p>ddd</p>
@@ -73,6 +75,8 @@
 
 	<p id="ddd">ddddd</p>
 
+	<div id="return" style="z-index: 999;cursor: pointer;background-color: #222;height: 30px;position: fixed;bottom: 0;left: 0;color: white;">返回键</div>
+
 	<center></center>
 </body>
 <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
@@ -84,8 +88,15 @@
 		var myClock = new jClock('clock'),
 		    myMemu = new memuInit("memu-btn","memu"); 
 
-		$("#memu-btn").click(myMemu.click); 
+		$("#memu-btn").click(function(){
+			$("#ddd").trigger("mouseenter"); 
+
+		}); 
+
+
 		myClock.jClocking();
+
+
 
 		$("#clock").click(function(){
 			$("#ddd").trigger("click"); 

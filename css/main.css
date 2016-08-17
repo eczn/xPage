@@ -65,11 +65,13 @@
 	-webkit-transform: rotateY(0deg);
 	
 	box-shadow: 4px 4px 0px rgba(0,0,0,0.5);
-	-webkit-transition: -webkit-transform 1s,box-shadow 1s; 
+	opacity: 1; 
+	-webkit-transition: -webkit-transform 1s, box-shadow 1s, opacity 1s; 
 }
 
 #clock:hover {
 	-webkit-transform: rotateY(-30deg);
 	box-shadow: -40px 16px 0px rgba(0,0,0,0.2);
-	-webkit-transition: -webkit-transform 1s,box-shadow 1s; 
+	opacity: 0.3; 
+	-webkit-transition: -webkit-transform 1s,box-shadow 1s, opacity 1s; 
 }
