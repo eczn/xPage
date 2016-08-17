@@ -25,11 +25,10 @@
 <script type="text/javascript">
 
 	$(document).ready(function(){
-		var myClock = new jClock('clock');
-		var myMemu = new memuInit("memu-btn","memu"); 
+		var myClock = new jClock('clock'),
+		    myMemu = new memuInit("memu-btn","memu"); 
 
 		$("#memu-btn").click(myMemu.click); 
-
 		myClock.jClocking();
 	}); 
 
