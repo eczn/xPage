@@ -23,6 +23,16 @@
 	overflow-y: hidden;
 }
 
+.nav:after{
+	content: "↓";
+	font-size: 64px;
+	display: block;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	bottom: 16px;
+}
+
 .nav:hover {
 	border-radius: 0;
 	height: 400px;
