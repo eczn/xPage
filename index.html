@@ -88,11 +88,13 @@
 		var myClock = new jClock('clock'),
 		    myMemu = new memuInit("memu-btn","memu"); 
 
-		$("#memu-btn").click(function(){
-			$("#ddd").trigger("mouseenter"); 
+		// $("").click(function(){
+		// 	$("#ddd").trigger("mouseenter"); 
 
-		}); 
-
+		// }); 
+		$(".nav, #return, #memu-btn").click(function(){
+			// 加了这个iPhone的safari就支持hover了，不知道为啥 真是玄学。。。
+		});
 
 		myClock.jClocking();
 

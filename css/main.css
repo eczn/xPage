@@ -35,6 +35,10 @@
 
 }
 
+.nav:active {
+	color: black;
+}
+
 .nav:hover {
 	border-radius: 0;
 	height: 400px;
