@@ -70,7 +70,8 @@
 	<p>ddd</p>
 	<p>ddd</p>
 	<p>ddd</p>
-	<p>ddd</p>
+
+	<p id="ddd">ddddd</p>
 
 	<center></center>
 </body>
@@ -85,6 +86,10 @@
 
 		$("#memu-btn").click(myMemu.click); 
 		myClock.jClocking();
+
+		$("#clock").click(function(){
+			$("#ddd").trigger("click"); 
+		}); 
 	}); 
 
 </script>
