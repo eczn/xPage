@@ -16,8 +16,8 @@
 	-moz-transition: background-color 2s, color 2s; /* Firefox 4 */
 	-webkit-transition: background-color 2s, color 2s; /* Safari 和 Chrome */
 	-o-transition: background-color 2s, color 2s; /* Opera */
-
 }
+
 #sent:hover {
 	background-color: rgb(30,70,50);
 	color: rgb(240,230,220);
@@ -47,7 +47,6 @@
 .intro:before {
 	content: "个人介绍："; 
 	top: 0;
-
 }
 
 #name {
