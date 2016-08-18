@@ -6,20 +6,23 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/memu.css">
+	<link rel="stylesheet" type="text/css" href="css/member.css">
 </head>
 <body>
 	<div class="nav">
-		<p>招贤纳士</p>
-		<p>printf("I Want You");</p>
-		<p>.......</p>
-		<p>嗯 很强</p>
+		<p>About us</p>
+		<p>开发的时候各种各样的... </p>
+		<p>从设计到写代码...</p>
+		<p>还有各种各样的交互</p>
+		<p>协作上用了Git和qq，技术栈是</p>
+		<p>jQuery/nodeJs</p>
 		<canvas id="clock"></canvas>
 	</div>
 	
 	<br/>
 	<!-- <center style="font-size: 40px;" >↑</center> -->
 
-	<div id="memu-btn">
+<!-- 	<div id="memu-btn">
 		memu
 		<div id="memu">
 			<div class="memu-item" id="introdution"><h1>自我介绍</h1></div>
@@ -27,67 +30,55 @@
 			<div class="memu-item"></div>
 			<div class="memu-item"></div>
 		</div>
+	</div> -->
+
+	<div id="return"><h1>←</h1></div> 
+
+
+	
+	<div class="member-intro">
+		<center><h1 style="margin: 20px;">为之付出努力的人</h1></center>
+		<div class="item" id="eczn">
+			<!-- <span></span> -->
+			<h2>主催#00</h2>
+			<p class="name">eczn</p>
+			<p class="intro"># hello coder,nice to code you</p>
+			<p># 完全不敢说话</p>
+			<p><s># 这仅存的一点彩色　</s></p>
+
+			
+			<a href="//eczn.website/" target="_blank">Page</a>
+		</div>
+
+		<div class="item">
+			<h2>码农#01</h2>
+			<p class="name">Czs</p>
+			<p class="intro"></p>
+		</div>
+		
+		<div class="item">
+			<h2>码农#02</h2>
+			<p class="name">JimmyZhan</p>
+			<p class="intro"># 默默无闻的coder</p>
+		</div>
+
+
+
+		<div class="item">
+			<h2>设计#99</h2>
+			<p>rabi-rabi</p>
+		</div>
 	</div>
+	
 
-	<center>
-		<p></p>
-	</center>
-	<p>ddd</p>
-	<p>ddd</p>	
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
-	<p>ddd</p>
+	
 
-	<p id="ddd">ddddd</p>
-
-	<div id="return">返回键</div>
-
+	<br/><br/><br/>
+	<center>Powered by EveryOne including you</center>
 	<hr>
+	<center>..没有了！..</center>
+	<br/><br/><br/><br/><br/>
 
-	<center>
-		<p>xPage由宣策部强力驱动</p>
-		<p><a href="//eczn.website/">->关于开发团队...</a></p>
-	</center>
-
-	<br/>
 
 </body>
 <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
@@ -103,8 +94,13 @@
 		// 	$("#ddd").trigger("mouseenter"); 
 
 		// }); 
-		$(".nav, #return, #memu-btn").click(function(){
+
+		$(".nav, #return, #memu-btn, .item").click(function(){
 			// 加了这个iPhone的safari就支持hover了，不知道为啥 真是玄学。。。
+			// 程序显然是可以执行到这里的。显然的click事件发生了
+			// 显然的click事件的发生必须要鼠标移动到this上面点击左键
+			// 于是显然的 hover 被触发了 
+			// 移动端的浏览器应该也是有 “鼠标” 这个东西的。
 		});
 
 		myClock.jClocking();

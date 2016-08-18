@@ -1,0 +1,70 @@
+/*member.css*/
+
+.member-intro {
+	width: 100%; 
+	position: relative;
+}
+
+
+.item {
+	position: relative;
+	height: 200px;
+	padding: 20px;
+	margin: 2em 5px 2em 5px;
+	border: 1.5px solid #222;
+	text-align: left;
+	border-radius: 30px 0px 30px 0;
+	
+	-webkit-filter: blur(0px);
+	-webkit-transition: border-radius 1s, -webkit-filter; 
+}
+
+.item:hover {
+	border-radius: 0px 30px 00px 30px;
+	/*-webkit-filter: blur(10px);*/
+	-webkit-transition: border-radius 1s, -webkit-filter; 
+}
+
+
+
+.item:nth-child(odd){
+	text-align: right;
+}
+
+/*.item > span {
+	position: absolute;
+	height: 100%; 
+	left: 0; 
+	top: 0;
+	width: 100%; 
+	background-color: rgba(0,0,0,0.5);
+}
+
+span:hover {
+	-webkit-filter: blur(10px);
+}*/
+
+
+#eczn {
+	background-image: url(../image/gitAva-small.png);
+	background-repeat: no-repeat;
+	background-position: bottom right; 
+
+	background-size: 320px;
+
+}
+
+#eczn > a {
+	position: absolute;
+	z-index: -999;
+/*	height: 40px;
+	width: 40px;*/
+	padding: 1.25em 0.75em 1.25em 0.75em;
+	background-color: #222; 
+	color: #fff; 
+	border-radius: 30px;
+	bottom: -1.5em;
+	left: -5px;
+}
+
+
