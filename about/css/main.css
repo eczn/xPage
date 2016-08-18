@@ -1,0 +1,82 @@
+/*main.css*/
+
+* {
+	padding: 0; 
+	margin: 0;
+	font-family: "Source Code Pro",consolas,Menlo,"PingFang SC","Microsoft YaHei",monospace;
+}
+
+.nav {
+	z-index: 989;
+	/*position: absolute;*/
+	color: white; 
+	text-align: center;
+	width: 100%;
+	height: 24px;
+	padding-bottom: 2px;
+	background-color: #222;
+	border-radius: 0px 0px 600px 600px / 0px 0px 20px 20px;
+	
+	/*line-height: 20px;*/
+	font-size: 16px;
+	text-shadow: 0px 0px 0px #000;
+	-webkit-transition: border-radius 1s, height 1s, font-size 1s, text-shadow 1s, box-shadow 1s; 
+	cursor: pointer;
+
+	overflow-y: hidden;
+
+	box-shadow: 0px 0px 0px #BBB;
+
+	background-repeat: no-repeat;
+	background-attachment: absolute;
+	background-position: right bottom;
+	/*background-bottom: 100px;*/
+	background-image: url(../image/pageNeed-smaller-v2.png);
+
+}
+
+.nav:hover {
+	border-radius: 0;
+	height: 400px;
+	/*line-height: 24px;*/
+	font-size: 24px;
+	text-shadow: 2px 4px 0px #000; 
+	box-shadow: 0px 10px 0px #222;
+	-webkit-transition: border-radius 1s, height 1s, font-size 1s, text-shadow 1s, box-shadow 1s; 
+}
+
+.nav:active {
+	color: black;
+	text-shadow: 0px 10px 0px #fff;
+}
+
+.nav:after{
+	content: "↓";
+	font-size: 64px;
+	display: block;
+	width: 100%;
+	/*position: absolute;*/
+	text-align: center;
+	bottom: 16px;
+}
+
+#clock {
+	margin-top: 20px;
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	background-color: white;
+
+	-webkit-transform: rotateY(0deg);
+	
+	box-shadow: 4px 4px 0px rgba(0,0,0,0.5);
+	opacity: 1; 
+	-webkit-transition: -webkit-transform 1s, box-shadow 1s, opacity 1s; 
+}
+
+#clock:hover {
+	-webkit-transform: rotateY(-30deg);
+	box-shadow: -40px 16px 0px rgba(0,0,0,0.2);
+	opacity: 0.3; 
+	-webkit-transition: -webkit-transform 1s,box-shadow 1s, opacity 1s; 
+}

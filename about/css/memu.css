@@ -1,0 +1,98 @@
+/*memu.css*/
+
+#memu-btn {
+	position: fixed;
+	color: white;
+	text-align: center;
+	/*width: 50px;*/
+	width: 20%;
+	height: 30px;
+	background-color: #222;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+
+	z-index: 999; 
+
+	-webkit-transition: height 1s;
+}
+
+#memu-btn:hover {
+	height: 100%; 
+	-webkit-transition: height 1s;
+}
+
+#memu-btn:active {
+	color: black; 
+}
+
+#memu {
+	z-index: 990; 
+	/*display: none; */
+	/*opacity: 0;*/
+	position: absolute;
+	
+
+	width: 500%; 
+	height: 100%;
+	top: 30px;
+	left: -400%;
+	/*background-color: rgba(0,0,0,.1);*/
+}
+
+.memu-item {
+	height: 25%;
+	width: 100%;
+
+	color: white;
+	cursor: pointer;
+	background-color: #000; 
+	opacity: 0.5;
+
+	/*-webkit-transition: width 2s;*/
+	transform-origin:0% 0%;
+	-webkit-transform: rotateY(0deg);	
+	-webkit-transition: -webkit-transform 1s;
+}
+
+
+.memu-item:nth-child(odd){
+	background-color: #000; 
+	opacity: 0.4; 
+}
+
+.memu-item:active {
+	transform-origin:0% 0%;
+	
+	-webkit-transform: rotateY(60deg);
+
+
+/*	width: 70%; 
+	-webkit-transition: width 2s;
+*/
+	-webkit-transition: -webkit-transform 1s;
+}
+
+.memu-item > h1 {
+	position: absolute;
+	height: 50%;
+	margin: 5% 0 0 20px;
+}
+
+#return {
+	z-index: 999;
+	cursor: pointer;
+	background-color: #222;
+	height: 30px;
+	width: 20%;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	left: 0;
+	color: white;
+}
+
+#return:active {
+	color: black;
+	font-size: 14px;
+}
