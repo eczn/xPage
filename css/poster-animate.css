@@ -3,6 +3,7 @@
 .animate-screen {
 	width: 320px; 
 	position: relative;
+	margin: 0 auto;
 	
 	background-color: #BBB;
 	height: 160px;
