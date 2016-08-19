@@ -4,6 +4,7 @@
 	padding: 0; 
 	margin: 0;
 	font-family: "Source Code Pro",consolas,Menlo,"PingFang SC","Microsoft YaHei",monospace;
+	overflow-x: hidden;
 }
 
 .nav {
