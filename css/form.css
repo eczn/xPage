@@ -1,0 +1,20 @@
+.form{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+.form_back{
+   width: 500px;
+   margin: auto;
+   background-color: red;
+}
+.sent{
+	margin: auto;
+}
+.sent button{
+	text-align: center;
+	width: 200px;
+	height: 60px;
+	border-radius: 5px;
+	margin: auto;
+}
