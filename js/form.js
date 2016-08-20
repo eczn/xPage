@@ -1,4 +1,12 @@
 //verify the form
+$(document).ready(function(){
+	$(".sent").click(function(){
+		var a = $(".name .frame").val();
+		var b= $(".tel .frame").val();
+		var c = $(".intro .frame").val();
+		verify(a,b,c);
+	})
+})
 function verify(name,phone,intro) {
 	if (phone.length != 11 || !(/^1[3|4|5|7|8]\d{9}$/.test(phone))){
 			alert("请输入有效的手机号码！");
