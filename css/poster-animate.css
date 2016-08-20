@@ -2,6 +2,7 @@
 
 .animate-screen {
 	width: 320px; 
+	/*padding: 40px;*/
 	position: relative;
 	margin: 0 auto;
 	
@@ -23,7 +24,7 @@
 
 .animate-img {
 	position: absolute;
-
+	
 	display: block;
 /*	animation-fill-mode: forwards;
 	animation-name: animate-lamb-go;
@@ -328,4 +329,21 @@
 	}
 }
 
+.animate-shink {
+	/*-webkit-animation-fill-mode: forwards;*/
+	opacity: 1;
+	/*transition: all 1s; */
+	-webkit-animation-name: animate-shink-go;
+	-webkit-animation-duration: 1.2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-delay: 0;
+}
 
+@keyframes animate-shink-go {
+	from {
+		opacity: 1; 
+	} to {
+		opacity: 0.4; 
+	}
+}

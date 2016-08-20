@@ -25,15 +25,18 @@ function Movie() {
 			
 		},1000);
 
-		
-		
-		
-
-		
 		setTimeout(function(){
 			main_text.addClass("animate-main-text");
 		},2500);
 
+		setTimeout(function(){
+			lamb.addClass("animate-shink");
+			left_bottom.addClass("animate-shink");
+			right_bottom.addClass("animate-shink");
+			// middle_text.addClass("animate-shink");
+			// main_text.addClass("animate-shink");
+			// pacman.addClass("animate-shink");
+		},5000); 
 
 	}
 	this.ka = ka; 
