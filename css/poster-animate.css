@@ -4,6 +4,7 @@
 	width: 320px; 
 	/*padding: 40px;*/
 	position: relative;
+	
 	margin: 0 auto;
 	
 	background-color: #BBB;
@@ -12,6 +13,11 @@
 	overflow: hidden; 
 	-webkit-filter: blur(10px);
 	/*-webkit-filter: blur(5px);*/
+}
+
+.animate-screen:hover {
+	
+	transition: margin 1s;
 }
 
 .un-blur {
@@ -269,7 +275,6 @@
 		transform: rotate(-36deg); 
 	}
 }
-
 @-webkit-keyframes animate-pacman-go {
 	0% {
 		transform: rotate(-34deg); 
@@ -328,6 +333,9 @@
 		-webkit-transform: rotate(-36deg); 
 	}
 }
+
+
+
 
 .animate-shink {
 	/*-webkit-animation-fill-mode: forwards;*/
