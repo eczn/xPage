@@ -127,30 +127,39 @@
 			$("#ddd").trigger("click"); 
 		}); 
 
+
+
+var hight = 0,
+	start = 0,
+	end = 0; 
+
+
 function moubileTouch(ev){
-	var hight = 0,
-		start = 0,
-		end = 0; 
 
 	// console.log("abc");
 //	function handleTouchEvent(ev) {
 
-	// console.log(ev.type); 
-		if (ev.touches.length == 1) {
-			switch (ev.type) {
-				case "touchstart":
-				console.log("start"); 
-				break;
-				case "touchend":console.log("start"); 
-				
-				break;
-				case "touchmove": console.log("move"); 
-//				event.preventDefault(); //阻止滚动
+	console.log("ev.type:"+ev.type);
 
-				break;
-			}
-		}
+	if (ev.type == "touchmove"){
+		ev.preventDefault();
 	}
+
+	if (ev.type == "touchstart"){
+		console.log(ev.targetTouches[0].pageY);
+		// console.log(ev.targetTouches);
+		start = ev.targetTouches[0].pageY;
+	} else if (ev.type == "touchend"){
+		// console.log(ev.changedTouches);
+		console.log(ev.changedTouches[0].pageY);
+		end = ev.changedTouches[0].pageY; 
+
+		hight += start - end; 
+		console.log("差:" + start - end);
+		console.log("高:" + hight); 
+	} 
+
+	return ; 
 }
 
 document.addEventListener("touchstart", moubileTouch, false);
