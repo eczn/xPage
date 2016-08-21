@@ -1,10 +1,10 @@
 //verify the form
 $(document).ready(function(){
 	$(".sent").click(function(){
-		var a = $(".name .frame").val();
-		var b= $(".tel .frame").val();
-		var c = $(".intro .frame").val();
-		verify(a,b,c);
+		var name= $(".Name").val();
+		var phone= $(".Phone").val();
+		var intro= $(".Intro").val();
+		verify(name,phone,intro);
 	})
 })
 function verify(name,phone,intro) {

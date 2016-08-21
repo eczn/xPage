@@ -1,13 +1,24 @@
+/*.circle{
+width: 60px;
+height: 60px;
+background-color: #5feee0;
+border-radius: 30px;
+position: absolute;
+margin-top: -20px;
+}*/
 .form{
 	height: 100%;
 	width: 100%;
 	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 .form_back{
 	width: 284px;
    margin: auto;
    background-color: #d7e3f5;
    border-radius: 6px;
+   box-shadow: 10px 10px 10px #f2f6fc;
 }
 .title{
 	font-family: "微软雅黑";
@@ -36,6 +47,10 @@
 .frame{
 	min-width: 255px;
 	resize: none;
+	border: #b5cbdd solid 1px;
+}
+.frame:hover{
+	outline: #5a7ac2 1px solid;
 }
 .block{
 	margin: 6px auto;
@@ -56,4 +71,5 @@
 	color: white;
 	font-size: 36px;
 	font-family: 'Myriad Pro Regular','Arial';
+	box-shadow: 8px 5px 5px #ffe0d4;
 }
