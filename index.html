@@ -83,6 +83,30 @@
 		// 	$("#ddd").trigger("mouseenter"); 
 
 		// }); 
+
+		// just test for "touchmove event"
+		// $(document).on('touchmove',function(){
+		// 	// console.log("touch move"); 
+		// 	// console.log($(window).scrollTop());
+		// 	var f = $(window).scrollTop()
+		// 	if (f>=35){
+		// 		$(".animate-screen").trigger("click"); 
+		// 	}
+		// });
+
+		var now = 0;
+		var start_p = 0; 
+		var end = 0;
+		// $(document).on('touch',function(e){
+		// 	// // touches[0]
+		// 	// start = e.targetTouches[0].pageY;
+		// 	// console.log(e.targetTouches[0]);
+		// 	// console.log("start:"+start); 
+		// 	console.log("touch");
+		// });
+
+
+
 		$(".nav, #return, #memu-btn").click(function(){
 			// 加了这个iPhone的safari就支持hover了，不知道为啥 真是玄学。。。
 		});
@@ -102,7 +126,41 @@
 		$("#clock").click(function(){
 			$("#ddd").trigger("click"); 
 		}); 
+
+function moubileTouch(ev){
+	var hight = 0,
+		start = 0,
+		end = 0; 
+
+	// console.log("abc");
+//	function handleTouchEvent(ev) {
+
+	// console.log(ev.type); 
+		if (ev.touches.length == 1) {
+			switch (ev.type) {
+				case "touchstart":
+				console.log("start"); 
+				break;
+				case "touchend":console.log("start"); 
+				
+				break;
+				case "touchmove": console.log("move"); 
+//				event.preventDefault(); //阻止滚动
+
+				break;
+			}
+		}
+	}
+}
+
+document.addEventListener("touchstart", moubileTouch, false);
+document.addEventListener("touchend", moubileTouch, false);
+document.addEventListener("touchmove", moubileTouch, false);
+
+
 	}); 
+
+
 
 </script>
 </html>
