@@ -139,24 +139,33 @@ function moubileTouch(ev){
 	// console.log("abc");
 //	function handleTouchEvent(ev) {
 
-	console.log("ev.type:"+ev.type);
+	// console.log("ev.type:"+ev.type);
 
 	if (ev.type == "touchmove"){
-		ev.preventDefault();
+		// ev.preventDefault();
 	}
 
 	if (ev.type == "touchstart"){
-		console.log(ev.targetTouches[0].pageY);
+		// console.log(ev.targetTouches[0].pageY);
 		// console.log(ev.targetTouches);
 		start = ev.targetTouches[0].pageY;
 	} else if (ev.type == "touchend"){
 		// console.log(ev.changedTouches);
-		console.log(ev.changedTouches[0].pageY);
+		// console.log(ev.changedTouches[0].pageY);
 		end = ev.changedTouches[0].pageY; 
 
-		hight += start - end; 
-		console.log("差:" + start - end);
-		console.log("高:" + hight); 
+		hight += start - end;
+		// console.log("差:" + start - end);
+		
+
+		if (hight >= $(document).height()){
+
+			hight = $(document).height();
+		} else if (hight <= 0){
+			hight = 0; 
+		}
+
+		console.log("高:" + hight);
 	} 
 
 	return ; 
