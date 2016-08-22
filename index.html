@@ -126,58 +126,6 @@
 		$("#clock").click(function(){
 			$("#ddd").trigger("click"); 
 		}); 
-
-
-
-var hight = 0,
-	start = 0,
-	end = 0; 
-
-
-console.log($(document).height()-$(window).innerHeight());
-
-function moubileTouch(ev){
-
-	// console.log("abc");
-//	function handleTouchEvent(ev) {
-
-	// console.log("ev.type:"+ev.type);
-
-	if (ev.type == "touchmove"){
-		// ev.preventDefault();
-	}
-
-	if (ev.type == "touchstart"){
-		// console.log(ev.targetTouches[0].pageY);
-		// console.log(ev.targetTouches);
-		start = ev.targetTouches[0].pageY;
-	} else if (ev.type == "touchend"){
-		// console.log(ev.changedTouches);
-		// console.log(ev.changedTouches[0].pageY);
-		end = ev.changedTouches[0].pageY; 
-
-		hight += start - end;
-		// console.log("差:" + start - end);
-		
-
-		if (hight >= $(document).height()-$(window).innerHeight()){
-
-			hight = $(document).height()-$(window).innerHeight();
-		} else if (hight <= 0){
-			hight = 0; 
-		}
-
-		console.log("高:" + hight);
-	} 
-
-	return ; 
-}
-
-document.addEventListener("touchstart", moubileTouch, false);
-document.addEventListener("touchend", moubileTouch, false);
-document.addEventListener("touchmove", moubileTouch, false);
-
-
 	}); 
 
 

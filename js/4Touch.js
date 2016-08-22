@@ -1,5 +1,9 @@
 // 4Touch.js
 // require some jQuery function: $(document).height(), $(window).innerHeight()
+// usage: 
+// var myTouchCore = new moubileTouch(true);
+// myTouchCore.height; 
+
 function moubileTouch(ifBind){
 	var height = 0,
 		start = 0,
@@ -25,13 +29,12 @@ function moubileTouch(ifBind){
 			height += start - end;
 			// console.log("差:" + start - end);
 			
-			if (height >= $(document).height()-$(window).innerHeight()){
-
-				height = $(document).height()-$(window).innerHeight();
+			if (height >= maxHeight){
+				height = maxHeight;
 			} else if (height <= 0){
 				height = 0; 
 			}
-			console.log("高:" + height);
+			console.warn("高:" + height);
 		} 
 	}
 
