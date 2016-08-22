@@ -1,30 +1,39 @@
 // 4Touch.js
-
-function moubileTouch(){
-	var hight = 0,
+// require some jQuery function: $(document).height(), $(window).innerHeight()
+function moubileTouch(ifBind){
+	var height = 0,
 		start = 0,
-		end = 0; 
+		end = 0,
+		maxHeight = $(document).height()-$(window).innerHeight();
 
-	function handleTouchEvent(ev) {
-		if (ev.touches.length == 1) {
-			switch (ev.type) {
-				case "touchstart":
-				console.log("start"); 
-				break;
-				case "touchend":console.log("start"); 
-				
-				break;
-				case "touchmove": console.log("move"); 
-//				event.preventDefault(); //阻止滚动
-
-				break;
-			}
-		}
+	if (ifBind){
+		document.addEventListener("touchstart", touchProcess, false);
+		document.addEventListener("touchend", touchProcess, false);
+		document.addEventListener("touchmove", touchProcess, false);
 	}
 
+	function touchProcess(ev){
+		if (ev.type == "touchstart"){
+			// console.log(ev.targetTouches[0].pageY);
+			// console.log(ev.targetTouches);
+			start = ev.targetTouches[0].pageY;
+		} else if (ev.type == "touchend"){
+			// console.log(ev.changedTouches);
+			// console.log(ev.changedTouches[0].pageY);
+			end = ev.changedTouches[0].pageY; 
+
+			height += start - end;
+			// console.log("差:" + start - end);
+			
+			if (height >= $(document).height()-$(window).innerHeight()){
+
+				height = $(document).height()-$(window).innerHeight();
+			} else if (height <= 0){
+				height = 0; 
+			}
+			console.log("高:" + height);
+		} 
+	}
+
+	this.height = height;
 }
-
-document.addEventListener("touchstart", moubileTouch, false);
-document.addEventListener("touchend", moubileTouch, false);
-document.addEventListener("touchmove", moubileTouch, false);
-
