@@ -81,3 +81,10 @@
 	opacity: 0.3; 
 	-webkit-transition: -webkit-transform 1s,box-shadow 1s, opacity 1s; 
 }
+
+.area-display {
+	position: relative;
+	widows: 100%;
+	margin: 50px 0 50px 0; 
+	overflow-x: hidden;
+}
