@@ -11,9 +11,9 @@ function moubileTouch(ifBind){
 		maxHeight = $(document).height()-$(window).innerHeight();
 
 	if (ifBind){
-		document.addEventListener("touchstart", touchProcess, false);
-		document.addEventListener("touchend", touchProcess, false);
-		document.addEventListener("touchmove", touchProcess, false);
+		// document.addEventListener("touchstart", touchProcess, false);
+		// document.addEventListener("touchend", touchProcess, false);
+		// document.addEventListener("touchmove", touchProcess, false);
 	}
 
 	function touchProcess(ev){
@@ -48,3 +48,18 @@ function moubileTouch(ifBind){
 
 	this.height = height;
 }
+
+
+// {
+// 	封面: {
+// 		//somthing
+// 	},
+// 	展示区: [
+// 		海报, // div.展示区#poster
+// 		传单, // div.展示区#chuandanzi
+// 		单反  // div.展示区#camara
+// 	],
+// 	报名表: {
+// 		//somthing
+// 	}, 
+// }
