@@ -71,6 +71,8 @@ margin-top: -20px;
 	color: white;
 	font-size: 36px;
 	font-family: 'Myriad Pro Regular','Arial';
-	box-shadow: 8px 5px 5px #ffe0d4;
+	box-shadow: 4px 5px 4px #ffe0d4;
 	border:none;
+	outline: none;
+
 }
