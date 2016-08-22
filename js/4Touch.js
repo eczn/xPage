@@ -17,7 +17,15 @@ function moubileTouch(ifBind){
 	}
 
 	function touchProcess(ev){
+		console.log(ev.target.tagName);
+		console.log(document.getElementsByTagName('body'));
+		if (ev.target.tagName != 'BODY'){
+			console.log('body');
+			return; 
+		}
+
 		if (ev.type == "touchstart"){
+			// console.log(); 
 			// console.log(ev.targetTouches[0].pageY);
 			// console.log(ev.targetTouches);
 			start = ev.targetTouches[0].pageY;

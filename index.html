@@ -71,41 +71,24 @@
 <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 <script type="text/javascript" src="js/animate-diretor.js"></script>
 <script type="text/javascript" src="js/jClock.js"></script>
+<script type="text/javascript" src="js/4Touch.js"></script>
 <script type="text/javascript" src="js/xbtn.js"></script>
 <script type="text/javascript">
 
 	$(document).ready(function(){
 		var myClock = new jClock('clock'),
-		    myMemu = new memuInit("memu-btn","memu"),
-		    posterAnimate = new Movie(); 
+			myMemu = new memuInit("memu-btn","memu"),
+			posterAnimate = new Movie(),
+			xTouchCore = new moubileTouch(true);
+
+		// setTimeout(function(){
+		// 	console.log(); 
+		// },1000); 
 
 		// $("").click(function(){
 		// 	$("#ddd").trigger("mouseenter"); 
 
 		// }); 
-
-		// just test for "touchmove event"
-		// $(document).on('touchmove',function(){
-		// 	// console.log("touch move"); 
-		// 	// console.log($(window).scrollTop());
-		// 	var f = $(window).scrollTop()
-		// 	if (f>=35){
-		// 		$(".animate-screen").trigger("click"); 
-		// 	}
-		// });
-
-		var now = 0;
-		var start_p = 0; 
-		var end = 0;
-		// $(document).on('touch',function(e){
-		// 	// // touches[0]
-		// 	// start = e.targetTouches[0].pageY;
-		// 	// console.log(e.targetTouches[0]);
-		// 	// console.log("start:"+start); 
-		// 	console.log("touch");
-		// });
-
-
 
 		$(".nav, #return, #memu-btn").click(function(){
 			// 加了这个iPhone的safari就支持hover了，不知道为啥 真是玄学。。。
@@ -120,8 +103,6 @@
 
 			$(".animate-screen").addClass("un-blur");
 		}); 
-
-		
 
 		$("#clock").click(function(){
 			$("#ddd").trigger("click"); 
