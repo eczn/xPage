@@ -1,0 +1,370 @@
+/*poster-animate.css*/
+
+.animate-screen {
+	width: 320px; 
+	/*padding: 40px;*/
+	position: relative;
+	
+	margin: 0 auto;
+	
+	background-color: #BBB;
+	height: 160px;
+	
+	overflow: hidden; 
+	-webkit-filter: blur(10px);
+	/*-webkit-filter: blur(5px);*/
+}
+
+.animate-screen:hover {
+	
+	transition: margin 1s;
+}
+
+.un-blur {
+	filter: blur(0);
+	-ms-filter: blur(0);
+	-webkit-filter: blur(0);
+	transition-property: -webkit-filter, -ms-filter, filter;
+	transition-duration: 1s;
+}
+
+.animate-img {
+	position: absolute;
+	
+	display: block;
+/*	animation-fill-mode: forwards;
+	animation-name: animate-lamb-go;
+	animation-duration: 1s;
+
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-name: animate-lamb-go;
+	-webkit-animation-duration: 1s;*/
+}
+
+.animate-lamb {
+	/*left: 0;*/
+	/*transition: all 1s; */
+	top: 0;
+	opacity: 0; 
+	animation-fill-mode: forwards;
+	animation-name: animate-lamb-go;
+	animation-duration: 1s;
+	animation-delay: 3s;
+
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-name: animate-lamb-go;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 3s;
+}
+
+@keyframes animate-lamb-go {
+	from {
+		-webkit-filter: blur(20px);
+		opacity: 0; 
+	} to {
+		-webkit-filter: blur(0);
+		opacity: 1;
+	}
+}
+@-webkit-keyframes animate-lamb-go {
+	from {
+		-webkit-filter: blur(20px);
+		opacity: 0; 
+	} to {
+		-webkit-filter: blur(0);
+		opacity: 1;
+	}
+}
+
+.animate-left-bottom {
+	bottom: 0;
+	left: 0; 
+	animation-fill-mode: forwards;
+	animation-name: animate-left-bottom-go;
+	animation-duration: 1s;
+
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-name: animate-left-bottom-go;
+	-webkit-animation-duration: 1s;
+}
+
+@keyframes animate-left-bottom-go {
+	from {
+		left: -130px; 
+		bottom: -80px;
+	} to {
+		left: 0;
+		bottom: 0; 
+	}
+}
+@-webkit-keyframes animate-left-bottom-go {
+	from {
+		left: -130px; 
+		bottom: -80px;
+	} to {
+		left: 0;
+		bottom: 0; 
+	}
+}
+
+.animate-right-bottom {
+	right: 0; 
+	bottom: 0; 
+	animation-fill-mode: forwards;
+	animation-name: animate-right-bottom-go;
+	animation-duration: 1s;
+
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-name: animate-right-bottom-go;
+	-webkit-animation-duration: 1s;
+}
+
+@keyframes animate-right-bottom-go {
+	from {
+		right: -140px; 
+		bottom: -30px;
+	} to {
+		right: 0px;
+		bottom: 0px;
+	}
+}
+@-webkit-keyframes animate-right-bottom-go {
+	from {
+		right: -140px; 
+		bottom: -30px;
+	} to {
+		right: 0px;
+		bottom: 0px;
+	}
+}
+
+.animate-middle {
+	top: 54px;
+	left: 4px;
+	animation-fill-mode: forwards;
+	animation-name: animate-middle-go;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-name: animate-middle-go;
+	-webkit-animation-duration: 1s;
+}
+
+@keyframes animate-middle-go {
+	from {
+		width: 160px; 
+		left: 80px;
+		opacity: 0;
+	} to {
+		width: 320px;
+		left: 4px;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes animate-middle-go {
+	from {
+		width: 160px; 
+		left: 80px;
+		opacity: 0;
+	} to {
+		width: 320px;
+		left: 4px;
+		opacity: 1;
+	}
+}
+
+
+.animate-main-text {
+	animation-fill-mode: forwards;
+	animation-name: animate-main-text-go;
+	animation-duration: 1s;
+
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-name: animate-main-text-go;
+	-webkit-animation-duration: 1s;
+}
+
+
+
+@keyframes animate-main-text-go {
+	from {
+		width: 640px;
+		height: 320px;
+		left: -160px;
+		top: -80px;
+	}
+	to {
+		width: 320px;
+		height: 160px;
+		left: 0px;
+		top: 0px;
+	}
+}
+
+@-webkit-keyframes animate-main-text-go {
+	from {
+		width: 640px;
+		height: 320px;
+		left: -160px;
+		top: -80px;
+	}
+	to {
+		width: 320px;
+		height: 160px;
+		left: 0px;
+		top: 0px;
+	}
+}
+
+.animate-pacman {
+	animation-fill-mode: forwards;
+	animation-name: animate-pacman-go;
+	animation-duration: 4s;
+
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-name: animate-pacman-go;
+	-webkit-animation-duration: 4s;
+}
+
+@keyframes animate-pacman-go {
+	0% {
+		transform: rotate(-34deg); 
+
+		bottom: -23px; 
+		left: 80px; 
+	} 25% {
+		transform: rotate(-34deg);
+		
+		bottom: 120px; 
+		left: 320px; 
+	} 26% {
+		transform: rotate(166deg); 
+	} 27% {
+		left: 300px;
+		bottom: 190px;
+	}
+	50% {
+		bottom: 30px;
+		left: -90px;
+		transform: rotate(146deg);
+	} 51% {
+		bottom: 30px;
+		left: -90px;
+		transform: rotate(18deg);
+	}
+	75% {
+		bottom: -22px; 
+		left: 154px; 
+	
+
+		transform: rotate(18deg); 
+	} 76% {
+		transform: rotate(-34deg); 
+	}
+
+	96% {
+		bottom: 40px;
+		left: 230px;
+		transform: rotate(-36deg); 
+	} 98% {
+		bottom: 40px;
+		left: 230px;
+		transform: rotate(-30deg); 
+	} 100% {
+		bottom: 40px;
+		left: 230px;
+		transform: rotate(-36deg); 
+	}
+}
+@-webkit-keyframes animate-pacman-go {
+	0% {
+		transform: rotate(-34deg); 
+		-webkit-transform: rotate(-34deg); 
+
+		bottom: -23px; 
+		left: 80px; 
+	} 25% {
+		transform: rotate(-34deg);
+		-webkit-transform: rotate(-34deg);
+		bottom: 120px; 
+		left: 320px; 
+	} 26% {
+		transform: rotate(166deg); 
+		-webkit-transform: rotate(166deg); 
+	} 27% {
+		left: 300px;
+		bottom: 190px;
+	}
+	50% {
+		bottom: 30px;
+		left: -90px;
+		transform: rotate(146deg);
+		-webkit-transform: rotate(146deg);
+	} 51% {
+		bottom: 30px;
+		left: -90px;
+		transform: rotate(18deg);
+		-webkit-transform: rotate(18deg);
+	}
+	75% {
+		bottom: -22px; 
+		left: 154px; 
+
+		transform: rotate(18deg); 
+		-webkit-transform: rotate(18deg);
+	} 76% {
+		transform: rotate(-34deg); 
+		-webkit-transform: rotate(-34deg); 
+	}
+
+	96% {
+		bottom: 40px;
+		left: 230px;
+		transform: rotate(-36deg); 
+		-webkit-transform: rotate(-36deg); 
+	} 98% {
+		bottom: 40px;
+		left: 230px;
+		transform: rotate(-30deg); 
+		-webkit-transform: rotate(-30deg); 
+	} 100% {
+		bottom: 40px;
+		left: 230px;
+		transform: rotate(-36deg); 
+		-webkit-transform: rotate(-36deg); 
+	}
+}
+
+
+
+
+.animate-shink {
+	/*-webkit-animation-fill-mode: forwards;*/
+	opacity: 1;
+	/*transition: all 1s; */
+	animation-name: animate-shink-go;
+	animation-duration: 1.2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-delay: 0;
+
+	-webkit-animation-name: animate-shink-go;
+	-webkit-animation-duration: 1.2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-delay: 0;
+}
+
+@keyframes animate-shink-go {
+	from {
+		opacity: 1; 
+	} to {
+		opacity: 0.4; 
+	}
+}
+@-webkit-keyframes animate-shink-go {
+	from {
+		opacity: 1; 
+	} to {
+		opacity: 0.4; 
+	}
+}
