@@ -23,7 +23,6 @@
 }
 
 .animate-screen:hover {
-	
 	transition: margin 1s;
 }
 
@@ -33,8 +32,8 @@
 }
 
 .juzhong {
-	margin: 0 auto; 
-	/*transition: all 1s;*/
+	/*margin: 0 auto; */
+	transition: all 1s;
 }
 
 .un-blur {

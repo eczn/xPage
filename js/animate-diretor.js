@@ -9,9 +9,14 @@ function Movie() {
 		main_text = $("#animate-main-text"),
 		pacman = $("#animate-pacman"); 
 
+	var f = $(window).innerWidth(); 
+	f = (f-320)/2; 
+
 	function ka(){
 		$("#black").addClass("on-dis"); 
 		$(".poster-container").addClass("juzhong");
+
+		$(".poster-container").css("margin","0 "+f+"px "+"0 "+f+"px");
 		lamb.addClass("animate-lamb");
 		
 		middle_text.addClass("animate-middle");
