@@ -38,6 +38,7 @@ function verify(name,phone,intro) {
 			error: function(data){
 				console.warn("faild");
 				console.log("报名失败！ ");
+				alert("报名失败！ "); 
 				console.log(data); 
 			}
 		});
