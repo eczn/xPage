@@ -5,7 +5,45 @@
 	/*margin: 0 auto;*/
 	margin: 0 0 0 -200px;
 	width: 320px;
+	cursor: pointer;
 }
+
+.poster-intro {
+	position: absolute;
+	left: 124px;
+	font-weight: lighter;
+	/*z-index: 10;*/
+}
+.poster-intro > .title {
+	font-size: 20px;
+	margin: 4px;
+}
+.poster-intro > .text {
+	font-size: 16px; 
+	margin: 0 4px 0 4px;
+}
+.PS {
+	/*content: "PS";*/
+	position: absolute;
+	width: 320px;
+	height: 160px;
+	z-index: -10;
+	top: -160px;
+	/*background-color: rgb(230, 240, 253);*/
+	background-color: rgb(220, 230, 243);
+	overflow: visible;
+}
+.PS > p {
+	font-family: "微软雅黑","consolas"; 
+	font-size: 50px;
+	position: absolute;
+	bottom: -10px;
+	right: 80px;
+	color: white;
+	font-weight: bold;
+	transform: rotate(-15deg);
+}
+
 
 .animate-screen {
 	width: 320px; 
@@ -21,6 +59,8 @@
 	-webkit-filter: blur(10px);
 	/*-webkit-filter: blur(5px);*/
 }
+
+
 
 .animate-screen:hover {
 	transition: margin 1s;
