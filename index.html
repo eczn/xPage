@@ -52,7 +52,7 @@
 	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 	<p id="ddd">ddddd</p>
 
-	<div id="return">返回键</div>
+	<div id="return"><h1>←</h1></div> 
 
 	<hr>
 
@@ -98,6 +98,9 @@
 		}); 
 		// $("#black").trigger("click");
 		
+		$("#return").click(function(){
+			console.log("click return, hover to here"); 
+		});
 
 		$("#clock").click(function(){
 			$("#ddd").trigger("click"); 
