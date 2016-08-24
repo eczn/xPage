@@ -22,6 +22,7 @@ function Movie() {
 	function ka(){
 		black.addClass("on-dis"); 
 		poster_container.addClass("juzhong");
+		$(".poster-intro").addClass("blur");
 
 		$(".poster-container").css("margin",margin_auto_str);
 		lamb.addClass("animate-lamb");

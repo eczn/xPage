@@ -11,11 +11,14 @@
 .poster-intro {
 	position: absolute;
 	left: 124px;
-	font-weight: lighter;
+	font-family: "微软雅黑","consolas","黑体"; 
+	font-weight: normal;
+	color: rgb(100, 100, 100);
 	/*z-index: 10;*/
 }
 .poster-intro > .title {
 	font-size: 20px;
+	text-shadow: 0 0 2px #BBB;
 	margin: 4px;
 }
 .poster-intro > .text {
@@ -34,7 +37,7 @@
 	overflow: visible;
 }
 .PS > p {
-	font-family: "微软雅黑","consolas"; 
+	/*font-family: "微软雅黑","consolas","黑体"; */
 	font-size: 50px;
 	position: absolute;
 	bottom: -10px;
@@ -42,6 +45,10 @@
 	color: white;
 	font-weight: bold;
 	transform: rotate(-15deg);
+	-webkit-transform: rotate(-15deg);
+	-moz-transform: rotate(-15deg);
+	-o-transform: rotate(-15deg);
+	-ms-transform: rotate(-15deg);
 }
 
 
@@ -73,6 +80,12 @@
 
 .juzhong {
 	/*margin: 0 auto; */
+	transition: all 1s;
+}
+
+.blur {
+	filter: blur(20px);
+	-webkit-filter: blur(20px);
 	transition: all 1s;
 }
 
