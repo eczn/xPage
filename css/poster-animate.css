@@ -368,3 +368,15 @@
 		opacity: 0.4; 
 	}
 }
+
+.N-title {
+	padding: 20px 40px 20px 40px;
+	width: 4em; /* 不能超过四个字 */
+	height: 1em; 
+
+	margin: 0; 
+}
+
+.N-title:hover {
+	hover css here
+}
