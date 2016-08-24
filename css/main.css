@@ -115,18 +115,36 @@
 	bottom: 4px; 
 }
 
-.msg span {
-
-
-
+.msg span{
+	content: "";
+    display: inline-block;
     width: 0;
     height: 0;
-    border-top: 70px solid transparent;
-    border-left: 140px solid red;
-    border-bottom: 70px solid transparent;
+    border-width: 6px;
+    overflow: hidden;
+    border-color: transparent transparent transparent #FFF;
+    border-style: dotted dotted dotted solid;
+    border-radius: 2px;
+
+	
+	-webkit-animation-name: animate-doudong;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-duration: .4s;
+	animation-timing-function: ease-in-out;
 
 }
+.msg p{
+	display: inline;
+}
+.msg p:after {
+	content: "";display: block;
+}
 
-.msg p {
-	display: inline-block;
+@keyframes animate-doudong {
+	from {
+		margin: 0; 
+	} to {
+		margin: 0 3px 0 0;
+	}
 }
