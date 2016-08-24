@@ -22,16 +22,11 @@
 
 	<div class="nav">
 		<p>招贤纳士</p>
-		<p>printf("I Want You");</p>
-		<p>.......</p>
-		<p>嗯 很强</p>
+		<p>加油开发哇</p>
 		<canvas id="clock"></canvas>
 	</div>
 	
-	<br/>
-	<!-- <center style="font-size: 40px;" >↑</center> -->
-
-	<div id="memu-btn">
+<!-- 	<div id="memu-btn">
 		memu
 		<div id="memu">
 			<div class="memu-item" id="introdution"><h1>自我介绍</h1></div>
@@ -39,29 +34,40 @@
 			<div class="memu-item"></div>
 			<div class="memu-item"></div>
 		</div>
-	</div>
-
-	<center>
-		<p></p>
-	</center>
-
-
+	</div> -->
 
 	<br/><br/><br/><br/>
 	
-	<center><h2>↓点我一下谢谢↓</h2></center>
-	<div class="animate-screen">
-		<img src="image/animate/background.jpg" width="320" alt="">
+	<!-- <center><h2>↓点我一下谢谢↓</h2></center> -->
 
-		<img class="animate-img" id="animate-lamb" src="image/animate/lamb.png" width="320">
-		<img class="animate-img" id="animate-left-bottom" src="image/animate/left-bottom.png">
-		<img class="animate-img" id="animate-right-bottom" src="image/animate/right-bottom-logo.png">
-		<img class="animate-img" id="animate-middle" src="image/animate/middle-text.png">
-		<img class="animate-img" id="animate-pacman" src="image/animate/pacman.png">
-		<img class="animate-img" id="animate-main-text" src="image/animate/main-text.png">
-	</div>
 
 	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+	<div class="poster-intro">
+		<div class="title">所见即所得</div>
+		<p class="text">海报被用于宣传，且是最必要的宣传方式</p>
+		<p class="text">something texted here.</p>
+	</div>
+	<div class="poster-container">
+		<img class="animate-img" id="black" src="image/animate/black.png">
+		<div class="animate-screen">	
+			<img src="image/animate/background.jpg" width="320" alt="">
+			<img class="animate-img" id="animate-lamb" src="image/animate/lamb.png" width="320">
+			<img class="animate-img" id="animate-left-bottom" src="image/animate/left-bottom.png">
+			<img class="animate-img" id="animate-right-bottom" src="image/animate/right-bottom-logo.png">
+			<img class="animate-img" id="animate-middle" src="image/animate/middle-text.png">
+			<img class="animate-img" id="animate-pacman" src="image/animate/pacman.png">
+			<img class="animate-img" id="animate-main-text" src="image/animate/main-text.png">
+		</div>
+	</div>
+	<span style="position: relative;"><div class="PS"><p>PS</p></div></span>
+	
+	
+	<center>
+		<br/><br/><br/>
+		<p>传单here</p>
+		<br/><br/><br/>
+	</center>
 
 	<div class="area-display" id="carema">
 		<div id ="animate_content" class="content">
@@ -112,7 +118,7 @@
 
 	<p id="ddd">ddddd</p>
 
-	<div id="return">返回键</div>
+	<div id="return"><h1>←</h1></div> 
 
 	<hr>
 
@@ -148,12 +154,18 @@
 		myClock.jClocking();
 
 		// $(".animate-screen").trigger("mouseenter"); 
-		$(".animate-screen").click(function(){
+		$("#black").click(function(){
 			posterAnimate.ka();
 			this.onclick = function(){return false}; 
 
-			$(".animate-screen").addClass("un-blur");
+			
 		}); 
+
+		// $("#black").trigger("click");
+		
+		$("#return").click(function(){
+			console.log("click return, hover to here"); 
+		});
 
 		$("#clock").click(function(){
 			$("#ddd").trigger("click"); 

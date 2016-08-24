@@ -1,11 +1,63 @@
 /*poster-animate.css*/
 
+.poster-container {
+	position: relative;
+	/*margin: 0 auto;*/
+	margin: 0 0 0 -200px;
+	width: 320px;
+	cursor: pointer;
+}
+
+.poster-intro {
+	position: absolute;
+	left: 124px;
+	font-family: "微软雅黑","consolas","黑体"; 
+	font-weight: normal;
+	color: rgb(100, 100, 100);
+	/*z-index: 10;*/
+}
+.poster-intro > .title {
+	font-size: 20px;
+	text-shadow: 0 0 2px #BBB;
+	margin: 4px;
+}
+.poster-intro > .text {
+	font-size: 16px; 
+	margin: 0 4px 0 4px;
+}
+.PS {
+	/*content: "PS";*/
+	position: absolute;
+	width: 320px;
+	height: 160px;
+	z-index: -10;
+	top: -160px;
+	/*background-color: rgb(230, 240, 253);*/
+	background-color: rgb(220, 230, 243);
+	overflow: visible;
+}
+.PS > p {
+	/*font-family: "微软雅黑","consolas","黑体"; */
+	font-size: 50px;
+	position: absolute;
+	bottom: -10px;
+	right: 80px;
+	color: white;
+	font-weight: bold;
+	transform: rotate(-15deg);
+	-webkit-transform: rotate(-15deg);
+	-moz-transform: rotate(-15deg);
+	-o-transform: rotate(-15deg);
+	-ms-transform: rotate(-15deg);
+}
+
+
 .animate-screen {
 	width: 320px; 
 	/*padding: 40px;*/
 	position: relative;
 	
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	
 	background-color: #BBB;
 	height: 160px;
@@ -15,12 +67,29 @@
 	/*-webkit-filter: blur(5px);*/
 }
 
+
+
 .animate-screen:hover {
-	
 	transition: margin 1s;
 }
 
-.un-blur {
+.on-dis { 
+	opacity: 0; 
+	transition: all 1s;
+}
+
+.juzhong {
+	/*margin: 0 auto; */
+	transition: all 1s;
+}
+
+.poster-blur {
+	filter: blur(20px);
+	-webkit-filter: blur(20px);
+	transition: all 1s;
+}
+
+.poster-un-blur {
 	filter: blur(0);
 	-ms-filter: blur(0);
 	-webkit-filter: blur(0);
@@ -369,14 +438,9 @@
 	}
 }
 
-.N-title {
-	padding: 20px 40px 20px 40px;
-	width: 4em; /* 不能超过四个字 */
-	height: 1em; 
-
-	margin: 0; 
-}
-
-.N-title:hover {
-	hover css here
+#black {
+	position: absolute;
+	z-index: 10;
+	top: 0; 
+	left: 0;
 }
