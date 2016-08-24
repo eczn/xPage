@@ -118,20 +118,16 @@
 
 
 
-
 	<br/>
 
 	<div class="bottom-about">
 		<img src="image/bottom.png">
-		
-		<p><a href="https://github.com/eczn/xPage/">Github</a></p>
-		<p>xPage由宣策部强力驱动</p>
-		<p><a href="//eczn.website/">->关于开发团队...</a></p>
-
+		<div class="msg">
+			<p><a href="https://github.com/eczn/xPage/">Github</a></p>
+			<p>xPage由宣策部强力驱动</p>
+			<p><a href="//eczn.website/">关于开发团队...</a></p>
+		</div>		
 	</div>
-
-	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
 
@@ -154,6 +150,8 @@
 		// 	$("#ddd").trigger("mouseenter"); 
 
 		// }); 
+
+		$(".bottom-about").css("height",parseInt($(".bottom-about").css("width"))*0.467+"px");
 
 		$(".nav, #return, #memu-btn").click(function(){
 			// 加了这个iPhone的safari就支持hover了，不知道为啥 真是玄学。。。
