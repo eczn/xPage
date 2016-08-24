@@ -10,6 +10,8 @@ function Movie() {
 		pacman = $("#animate-pacman"); 
 
 	function ka(){
+		$("#black").addClass("on-dis"); 
+		$(".poster-container").addClass("juzhong");
 		lamb.addClass("animate-lamb");
 		
 		middle_text.addClass("animate-middle");

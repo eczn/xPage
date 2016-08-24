@@ -1,11 +1,18 @@
 /*poster-animate.css*/
 
+.poster-container {
+	position: relative;
+	/*margin: 0 auto;*/
+	margin: 0 0 0 -200px;
+	width: 320px;
+}
+
 .animate-screen {
 	width: 320px; 
 	/*padding: 40px;*/
 	position: relative;
 	
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	
 	background-color: #BBB;
 	height: 160px;
@@ -18,6 +25,16 @@
 .animate-screen:hover {
 	
 	transition: margin 1s;
+}
+
+.on-dis { 
+	opacity: 0; 
+	transition: all 1s;
+}
+
+.juzhong {
+	margin: 0 auto; 
+	/*transition: all 1s;*/
 }
 
 .un-blur {
@@ -367,4 +384,11 @@
 	} to {
 		opacity: 0.4; 
 	}
+}
+
+#black {
+	position: absolute;
+	z-index: 10;
+	top: 0; 
+	left: 0;
 }
