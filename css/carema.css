@@ -4,8 +4,10 @@
 }
 #animate_focus{
 	position: absolute;
+	display: none;
 }
-.focus{
+#animate_focus.focus{
+	display: block;
     top: 50%;
     left: 50%;
     margin-left: -4.5%;
@@ -13,7 +15,7 @@
 	width: 9%;
 	height: 18%;
 	z-index: 5;
-	cursor: pointer;	
+ 	cursor: pointer;	
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
 	animation-name: focus-go;
@@ -24,9 +26,9 @@
 	-webkit-animation-name: focus-go;
 	animation-iteration-count: infinite;
 	-webkit-animation-duration: 1s;
-	-webkit-animation-delay: 0s;
+	-webkit-animation-delay: 0s; 
 }
-@keyframes focus-go{
+ @keyframes focus-go{
 	0%{
 		opacity: 1;
 	}100%{
@@ -39,7 +41,7 @@
 	}100%{
 		opacity: 0;
 	}
-}
+} 
 	
 .blur img{
 	width: 100%;
@@ -150,8 +152,38 @@
 		opacity: 0;
 	}
 }
+#animate_flicker{
+	position: absolute;
+    width: 100%;
+    opacity: 0;
+}
+.flicker{
+    animation-fill-mode: both;
+	animation-name: flicker-go;
+	animation-duration: 1s;
+	animation-delay: 0s;
 
- .lens{
+	-webkit-animation-fill-mode: both;
+	-webkit-animation-name: flicker-go;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 0s;
+}
+@keyframes flicker-go{
+	0%{
+		opacity: 1;
+	}100%{
+		opacity: 0;
+	}
+}
+@-webkit-keyframes flicker-go{
+	0%{
+		opacity: 1;
+	}100%{
+		opacity: 0;
+	}
+}
+
+.lens{
     position: absolute;
     top: 0;
     left: 0;
