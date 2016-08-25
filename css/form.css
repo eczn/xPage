@@ -36,18 +36,20 @@ margin-top: -20px;
 	margin-left: -220px;
 }
 .sex{
-	margin-left: -140px;
+	margin-left: -138px;
 }
 .intro{
-	margin-left: -190px;
+	margin-left: -186px;
 }
 .tel{
-	margin-left: -190px;
+	margin-left: -186px;
 }
 .frame{
 	min-width: 255px;
+	min-height: 20px;
 	resize: none;
 	border: #b5cbdd solid 1px;
+	font-size: 16px;
 }
 .frame:hover{
 	outline: #5a7ac2 1px solid;
@@ -74,5 +76,5 @@ margin-top: -20px;
 	box-shadow: 6px 6px 12px #ffe0d4;
 	border:none;
 	outline: none;
-
+    
 }
