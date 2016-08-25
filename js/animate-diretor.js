@@ -7,9 +7,25 @@ function Movie() {
 		right_bottom = $("#animate-right-bottom"),
 		middle_text = $("#animate-middle"),
 		main_text = $("#animate-main-text"),
-		pacman = $("#animate-pacman"); 
+		pacman = $("#animate-pacman"),
+		black = $("#black"),
+		poster_container = $(".poster-container"),
+		margin_auto_str = 0;
+
+
+	var calcAuto = (function(){
+		var auto = $(window).innerWidth(); 
+		auto = (auto-320)/2;
+		margin_auto_str = "0 " + auto + "px " + "0 " + auto + "px"; 
+	})(); 
 
 	function ka(){
+		black.addClass("on-dis"); 
+		poster_container.addClass("juzhong");
+		$(".animate-screen").addClass("poster-un-blur");
+		$(".poster-intro").addClass("poster-blur");
+
+		$(".poster-container").css("margin",margin_auto_str);
 		lamb.addClass("animate-lamb");
 		
 		middle_text.addClass("animate-middle");
@@ -39,5 +55,7 @@ function Movie() {
 		},5000); 
 
 	}
+
 	this.ka = ka; 
+	this.calcAuto = calcAuto; 
 }

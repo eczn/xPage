@@ -24,7 +24,7 @@
 
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-name: focus-go;
-	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-delay: 0s; 
 }

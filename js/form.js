@@ -34,10 +34,12 @@ function verify(name,phone,intro) {
 				console.log(data);
 				console.log("success");
 				alert("报名成功！"); 
+				 $(".frame").val('');
 			},
 			error: function(data){
 				console.warn("faild");
 				console.log("报名失败！ ");
+				alert("报名失败！ "); 
 				console.log(data); 
 			}
 		});
