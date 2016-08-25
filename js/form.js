@@ -1,6 +1,6 @@
 //verify the form
 $(document).ready(function(){
-	$(".sent").click(function(){
+	$(".sent button").click(function(){
 		var name= $(".Name").val();
 		var phone= $(".Phone").val();
 		var intro= $(".Intro").val();
