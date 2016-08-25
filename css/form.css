@@ -85,7 +85,55 @@ margin-top: -20px;
 	position: fixed;
 	width: 100%; 
 	height: 100%; 
-	background-color: #BBB; 
+	background-color: #FFF; 
 	z-index: 999; 
 	/*display: none;*/
 }
+
+#success .msg {
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#welcome-pic {
+	width: 100%;
+}
+
+
+#ps-icon {
+	width: 60px;
+	position: absolute;
+	/*left: 0;*/
+	right: 50px;
+	bottom: 22%;
+	
+}
+
+#success > span {
+	content: ""; 
+	/*border-bottom: 30px solid rgb(110, 101, 140);*/
+	width: 100%; 
+	height: 30px;
+	background-color: rgb(110, 101, 140);
+	position: absolute;
+	bottom: 20%; 
+}
+
+#success > span:before {
+	content: "";
+	position: absolute;
+	height: 0; 
+	
+	height: 120px;
+	width: 120px;
+
+	top: -150px;
+	left: -120px; 
+
+	border: 30px solid rgb(110, 101, 140);
+	border-radius: 120px;
+	background-color: #FFF;
+	
+}
+
