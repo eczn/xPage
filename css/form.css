@@ -78,3 +78,14 @@ margin-top: -20px;
 	outline: none;
     
 }
+
+
+/** ↓占个茅坑↓ **/
+#success {
+	position: fixed;
+	width: 100%; 
+	height: 100%; 
+	background-color: #BBB; 
+	z-index: 999; 
+	/*display: none;*/
+}
