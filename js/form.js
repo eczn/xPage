@@ -29,11 +29,8 @@ function successInit(){
 
 $(document).ready(function(){
 
-<<<<<<< HEAD
-	$(".sent").click(function(){
-=======
 	$(".sent button").click(function(){
->>>>>>> f2949c1671ca27b250adb9c20b2751d275701317
+
 		
 
 		var name= $(".Name").val();
