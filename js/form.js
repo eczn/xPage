@@ -29,10 +29,6 @@ function successInit(){
 
 $(document).ready(function(){
 
-	$(".sent button").click(function(){
-
-
-
 	$(".sent").click(function(){
 		
 
