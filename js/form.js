@@ -30,10 +30,6 @@ function successInit(){
 $(document).ready(function(){
 
 	$(".sent button").click(function(){
-
-
-
-	$(".sent").click(function(){
 		
 
 		var name= $(".Name").val();
@@ -48,40 +44,37 @@ $(document).ready(function(){
 //verify the form
 function verify(name,phone,intro) {
 	if (phone.length != 11 || !(/^1[3|4|5|7|8]\d{9}$/.test(phone))){
-			alert("请输入有效的手机号码！");
-			return; 
-		} 
-		else if (intro.length > 255) {
-			alert("个人介绍似乎有点长了...");
-			return; 
+		alert("请输入有效的手机号码！");
+		return; 
+	} else if (intro.length > 255) {
+		alert("个人介绍似乎有点长了...");
+		return; 
+	} else if (name.length > 10) {
+		alert("名字填写错误");
+		return; 
+	}
+	$.ajax({
+		type: 'post',
+		async: true,
+		url: "http://eczn.website:8086", 
+		data: {
+			name: name,
+			phone: phone,
+			intro: intro
+		},
+		dataType: 'json',
+		success: function(data){
+			console.log(data);
+			console.log("success");
+			alert("报名成功！"); 
+			$(".frame").val('');
+			xPageForm.click(); 
+		},
+		error: function(data){
+			console.warn("faild");
+			console.log("报名失败！ ");
+			alert("报名失败！ "); 
+			console.log(data); 
 		}
-        else if (name.length > 10) {
-			alert("名字填写错误");
-			return; 
-		}
-		$.ajax({
-			type: 'post',
-			async: true,
-			url: "http://eczn.website:8086", 
-			data: {
-				name: name,
-				phone: phone,
-				intro: intro
-			},
-			dataType: 'json',
-			success: function(data){
-				console.log(data);
-				console.log("success");
-				alert("报名成功！"); 
-				$(".frame").val('');
-				xPageForm.click(); 
-			},
-			error: function(data){
-				console.warn("faild");
-				console.log("报名失败！ ");
-				alert("报名失败！ "); 
-				console.log(data); 
-			}
-		});
+	});
 }
-
