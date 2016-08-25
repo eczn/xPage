@@ -34,6 +34,7 @@ function verify(name,phone,intro) {
 				console.log(data);
 				console.log("success");
 				alert("报名成功！"); 
+				 $(".frame").val('');
 			},
 			error: function(data){
 				console.warn("faild");
