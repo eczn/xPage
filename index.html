@@ -3,22 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+
+	<title>2016宣策招新</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/memu.css">
 	<link rel="stylesheet" type="text/css" href="css/form.css">
 	<link rel="stylesheet" type="text/css" href="css/chuandan.css">
-<link rel="stylesheet" type="text/css" href="css/poster-animate.css">
-<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-<script type="text/javascript" src="js/animate-diretor.js"></script>
-<script type="text/javascript" src="js/jClock.js"></script>
-<script type="text/javascript" src="js/4Touch.js"></script>
-<script type="text/javascript" src="js/xbtn.js"></script>
-<script type="text/javascript" src="js/form.js"></script>
-	<title>2016宣策招新</title>
+	<link rel="stylesheet" type="text/css" href="css/poster-animate.css">
 	<link rel="stylesheet" type="text/css" href="css/carema.css">
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/animate-diretor.js"></script>
+	<script type="text/javascript" src="js/jClock.js"></script>
+	<script type="text/javascript" src="js/4Touch.js"></script>
+	<script type="text/javascript" src="js/xbtn.js"></script>
+	<script type="text/javascript" src="js/form.js"></script>
     <script type="text/javascript" src="js/carema.js"></script>
 </head>
 <body>
+	<div id="success">
+		<span></span>
+		<img id="welcome-pic" src="image/welcome/001.png">
+		<div class="msg">
+			<p>我们真诚地欢迎你</p>
+			<p>加入宣策 以此开始你</p>
+			<p>大学生活的不平凡</p>
+		</div>
+
+		<img id="ps-icon" src="image/welcome/psicon.png" width="60">
+
+	</div>
 
 	<div class="nav">
 		<p>招贤纳士</p>
@@ -31,17 +44,7 @@
 	<br/>
 	<!-- <center style="font-size: 40px;" >↑</center> -->
 
-	<!-- <div id="memu-btn"> -->
 
-<!-- 	<div id="memu-btn">
-		memu
-		<div id="memu">
-			<div class="memu-item" id="introdution"><h1>自我介绍</h1></div>
-			<div class="memu-item" id="join-us"><h1>加入我们</h1></div>
-			<div class="memu-item"></div>
-			<div class="memu-item"></div>
-		</div>
-	</div> -->
 
 	<br/><br/><br/><br/>
 	
@@ -66,6 +69,23 @@
 
 	</center>
 
+
+
+
+	<br/><br/><br/><br/>
+	
+<!-- chuandan -->
+	<div class="chuandan">
+		<div class="blue_back">
+			<div class="img">
+				
+				<img class="vvv" src="image/chuandan/v7.jpg">
+				<img class="computer" src="image/chuandan/computer.jpg">
+			</div>
+		</div>
+		<span class="word">在木棉菁英学生会中，宣策<br/>用海报和传单为每个活动拉开帷幕</span>
+		<div class="red_back"></div>
+	</div>
 
 
 
@@ -109,12 +129,11 @@
 	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 	<div class="area-display" id="carema">
-		<div id ="animate_content" class="content">
-			<p>以摄影的方式贯穿<br/>整个活动，并在后期进行<br/>照片整理与资源分享</p>
-		</div>
+		<p id ="animate_content" class="content">以摄影的方式贯穿<br/>整个活动，并在后期进行<br/>照片整理与资源分享</p>
+		<img id="animate_flicker" src="image/carema/flicker.png">
 		<div id ="animate_shadow" class="shadow"></div>
-		<div id ="animate_blur" class="blur"></div>
-		<div id ="animate_focus" class ="focus"></div>
+		<div id ="animate_blur" class="blur"><img src="image/carema/clear_photo.jpg"></div>
+		<img id ="animate_focus" class ="focus" src="image/carema/focus.png">
 		<div id ="animate_lens" class="lens"></div>
 	</div>
 
@@ -177,6 +196,9 @@
 </body>
 
 <script type="text/javascript">
+
+var xPageForm = new successInit(); 
+
 	$(document).ready(function(){
 		var myClock = new jClock('clock'),
 			myMemu = new memuInit("memu-btn","memu"),
