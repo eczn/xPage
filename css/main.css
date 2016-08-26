@@ -136,7 +136,7 @@ body {
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
 	-webkit-animation-duration: .4s;
-	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
 
 }
 .msg p{
@@ -153,3 +153,12 @@ body {
 		margin: 0 3px 0 0;
 	}
 }
+
+@-webkit-keyframes animate-doudong {
+	from {
+		margin: 0; 
+	} to {
+		margin: 0 3px 0 0;
+	}
+}
+
