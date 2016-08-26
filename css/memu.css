@@ -79,7 +79,7 @@
 	margin: 5% 0 0 20px;
 }
 
-#return {
+.return {
 	z-index: 990;
 	cursor: pointer;
 	background-color: #222;
