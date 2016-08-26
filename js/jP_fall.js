@@ -32,55 +32,43 @@ function codeWallInit(domCanvasId){
 	var width_em = parseInt((window.innerWidth / 60)+1); 
 	console.log(width_em); 
 
-	function setFillStyle(style){
-		g.fillStyle = style;
-	}
 
-	function clearCanvas(){
-		g.clearRect(0,0,width,height);
-		// var i = 0; 
-		// var imgTemp = g.getImageData(0,0,width,height); 
 
-		// for(i=0; i<imgTemp.data.length ; i+=4 ){
-		// 	imgTemp.data[i+3] = 0;
-		// }
-		// g.putImageData(imgTemp,0,0);
-	}
 
 	g.font = "60px Mono ";
 	// g.rotate(90 * Math.PI / 180);
-	var i = 0; 
-	var str_length = code[0].length; 
-	function draw(){
-		// alert("click");
-		// g.font = "60px Mono ";
-		// //设置字体填充颜色
-		// g.fillStyle = "blue";
-		// //从坐标点(50,50)开始绘制文字
-		// g.fillText("CodePlayer+中文测试", 50, 50);
+	// g.translate(100, 100);
 
-		
-		// g.translate(100, 100);
-		
+	var k = 30; 
+	var imgTemp
+	for (var j =0;j<code[0].length;j++){
+		g.fillText(code[0].slice(j,j+1),0,j+k);
+		k+=60;
+	}
 	
-		g.clearRect(0,0,height,width);
-		g.fillText(code[0]+i,i,100);
-		// g.clearRect(-1*width,-1*height,width,height);
+
+	imgTemp = g.getImageData(0,0,40,code[0].length*60); 
+	g.clearRect(0,0,height,width);
+
+	g.putImageData(imgTemp,0,0);
+
+	// var i = 0; 
+	// var str_length = code[0].length; 
+	function draw(i){
+		g.putImageData(imgTemp,0,i);
 		
-
-		i+=1;
-		// console.log(i); 
-		// setInterval(draw,10);
-		requestAnimationFrame(draw);
+		requestAnimationFrame(function(){
+			draw(i+1);
+		});
 	}
-	draw(); 
+	// draw(); 
 
-	function fall(){
-		var i=0; 
-		for (i=0;i<width_em;i++){
+	// function fall(){
+	// 	var i=0; 
+	// 	for (i=0;i<width_em;i++){
 
-		}
-	}
+	// 	}
+	// }
 
 //fillText(string text, int x, int y[, int maxWidth])
 
@@ -122,8 +110,8 @@ function codeWallInit(domCanvasId){
 
 	// ball.draw();
 
-	this.fall = fall; 
+	// this.fall = fall; 
 	this.draw = draw; 
-	this.setFillStyle = setFillStyle;
+	// this.setFillStyle = setFillStyle;
 
 }

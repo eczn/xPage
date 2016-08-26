@@ -25,7 +25,7 @@
 		<!-- <img src="image/vector/circle.svg" alt=""> -->
 	</div>
 	
-	<canvas style="position: fixed;width: 100%;z-index: 999;background-color: #fff;" id="code-wall"></canvas>
+	<canvas style="position: fixed;width: 100%;z-index: 999;background-color: #fff;top: 0;left: 0;" id="code-wall"></canvas>
 
 	<div id="success">
 		<span></span>
@@ -205,7 +205,7 @@ var xPageForm = new successInit();
 		var myCodeWall = new codeWallInit('code-wall');
 
 		$("#code-wall").click(function(){
-			window.requestAnimationFrame(myCodeWall.draw); 
+			myCodeWall.draw(0); 
 		});
 
 		// setTimeout(function(){
