@@ -1,22 +1,58 @@
  /*svg.css*/
- /*  紫色  */
-.svg-purple {
-	/*svg本来就是紫色*/
-}
-
-/*  橙色  */
-.svg-orange {
-	filter: hue-rotate(115deg) saturate(4) brightness(1.5);
-	-webkit-filter: hue-rotate(115deg) saturate(4) brightness(1.5);
-}
-
-/*  cyan-blue青色  */
-.svg-cyan {
-	filter: hue-rotate(276deg) saturate(3.5) brightness(1.6);
-	-webkit-filter: hue-rotate(276deg) saturate(3.5) brightness(1.6);
-}
 
 .fir-3circle > img {
 	display: block;
 	margin: 6px auto 6px auto;
+}
+
+.fir-3circle > img:nth-child(1){
+	-webkit-transform: rotate(55deg);
+	
+	-webkit-animation-name: svg-big-and-small;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+.fir-3circle > img:nth-child(2){
+	-webkit-transform: rotate(225deg); 
+
+	-webkit-animation-name: svg-big-and-small;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-delay: .4s;
+}
+
+.fir-3circle > img:nth-child(3){
+	-webkit-transform: rotate(40deg); 
+
+	-webkit-animation-name: svg-big-and-small;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-delay: .8s;
+}
+
+@keyframes svg-big-and-small {
+	from {
+		/*width: 30px;*/
+		opacity: 1;
+	} to {
+		/*width: 45px;*/
+		opacity: .65;
+	}
+}
+
+@-webkit-keyframes svg-big-and-small {
+	from {
+		/*width: 30px;*/
+		opacity: 1;
+	} to {
+		/*width: 45px;*/
+		opacity: .7;
+	}
 }
