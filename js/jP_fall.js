@@ -29,6 +29,9 @@ function codeWallInit(domCanvasId){
 		g = domCanvas.getContext('2d');
 
 
+	var width_em = parseInt((window.innerWidth / 60)+1); 
+	console.log(width_em); 
+
 	function setFillStyle(style){
 		g.fillStyle = style;
 	}
@@ -45,8 +48,10 @@ function codeWallInit(domCanvasId){
 	}
 
 	g.font = "60px Mono ";
-	g.rotate(90 * Math.PI / 180);
-	function draw(i){
+	// g.rotate(90 * Math.PI / 180);
+	var i = 0; 
+	var str_length = code[0].length; 
+	function draw(){
 		// alert("click");
 		// g.font = "60px Mono ";
 		// //设置字体填充颜色
@@ -55,18 +60,69 @@ function codeWallInit(domCanvasId){
 		// g.fillText("CodePlayer+中文测试", 50, 50);
 
 		
-		// ctx.translate(100, 100);
+		// g.translate(100, 100);
 		
-		var str_length = code[0].length; 
+	
+		g.clearRect(0,0,height,width);
+		g.fillText(code[0]+i,i,100);
+		// g.clearRect(-1*width,-1*height,width,height);
+		
 
-		g.fillText(code[0],i-str_length*60,0);
+		i+=1;
+		// console.log(i); 
+		// setInterval(draw,10);
+		requestAnimationFrame(draw);
+	}
+	draw(); 
 
-		window.requestAnimationFrame(function(){
-			i+= 10;
-			draw(i); 
-		});
+	function fall(){
+		var i=0; 
+		for (i=0;i<width_em;i++){
+
+		}
 	}
 
+//fillText(string text, int x, int y[, int maxWidth])
+
+
+	// var raf;
+
+	// var ball = {
+	//   x: 100,
+	//   y: 100,
+	//   vx: 5,
+	//   vy: 2,
+	//   radius: 25,
+	//   color: 'blue',
+	//   draw: function() {
+	//     g.beginPath();
+	//     g.arc(this.x, this.y, this.radius, 0, Math.PI*2, true);
+	//     g.closePath();
+	//     g.fillStyle = this.color;
+	//     g.fill();
+	//   }
+	// };
+
+	// function draw() {
+	//   g.clearRect(0,0, domCanvas.width, domCanvas.height);
+	//   ball.draw();
+	//   ball.x += ball.vx;
+	//   ball.y += ball.vy;
+	//   raf = window.requestAnimationFrame(draw);
+	// }
+
+
+	// domCanvas.addEventListener('mouseover', function(e){
+	//   raf = window.requestAnimationFrame(draw);
+	// });
+
+	// domCanvas.addEventListener("mouseout",function(e){
+	//   window.cancelAnimationFrame(raf);
+	// });
+
+	// ball.draw();
+
+	this.fall = fall; 
 	this.draw = draw; 
 	this.setFillStyle = setFillStyle;
 

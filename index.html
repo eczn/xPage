@@ -205,7 +205,7 @@ var xPageForm = new successInit();
 		var myCodeWall = new codeWallInit('code-wall');
 
 		$("#code-wall").click(function(){
-			myCodeWall.draw(0);
+			window.requestAnimationFrame(myCodeWall.draw); 
 		});
 
 		// setTimeout(function(){
