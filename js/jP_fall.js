@@ -22,3 +22,11 @@ function wallInit(domCanvasId){
 
 	// function 
 }
+
+var pen = function(){
+	var domCanvas; 
+
+
+
+	// setCanvas
+}
