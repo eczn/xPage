@@ -1,0 +1,79 @@
+/*svg-car-animation.css*/
+
+.svg-car {
+	position: absolute;
+	right: -100%; 
+	bottom: 8%; 
+	width: 10%;
+}
+/*
+	transform: rotate(180deg);
+	transform-origin: 50% -310%;
+*/
+
+.svg-car-1 {
+	-webkit-animation-name: svg-car-go;
+	-webkit-animation-fill-mode: forwards;
+	/*-webkit-animation-iteration-count: infinite;*/
+	/*-webkit-animation-direction: alternate;*/
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: linear;
+
+}
+.svg-car-2 {
+	-webkit-animation-name: svg-car-go;
+	-webkit-animation-fill-mode: forwards;
+	/*-webkit-animation-iteration-count: infinite;*/
+	/*-webkit-animation-direction: alternate;*/
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: .2s;
+}
+.svg-car-3 {
+	-webkit-animation-name: svg-car-go;
+	-webkit-animation-fill-mode: forwards;
+	/*-webkit-animation-iteration-count: infinite;*/
+	/*-webkit-animation-direction: alternate;*/
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: .4s;
+}
+.svg-car-4 {
+	-webkit-animation-name: svg-car-go;
+	-webkit-animation-fill-mode: forwards;
+	/*-webkit-animation-iteration-count: infinite;*/
+	/*-webkit-animation-direction: alternate;*/
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: .6s;
+}
+.svg-car-5 {
+	-webkit-animation-name: svg-car-go;
+	-webkit-animation-fill-mode: forwards;
+	/*-webkit-animation-iteration-count: infinite;*/
+	/*-webkit-animation-direction: alternate;*/
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: .8s;
+}
+
+@-webkit-keyframes svg-car-go {
+	0% {
+		right: -10%; 
+		transform: rotate(0deg);
+		transform-origin: 50% -310%;
+	}
+	22% {
+		right: 45%; 
+		transform: rotate(0deg);
+		transform-origin: 50% -310%;
+	} 78% {
+		right: 45%; 
+		transform: rotate(360deg);
+		transform-origin: 50% -310%;		
+	} 100% {
+		right: 110%; 
+		transform: rotate(360deg);
+		transform-origin: 50% -310%;
+	}
+}
