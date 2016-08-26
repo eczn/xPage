@@ -16,3 +16,7 @@
 	-webkit-filter: hue-rotate(276deg) saturate(3.5) brightness(1.6);
 }
 
+.fir-3circle > img {
+	display: block;
+	margin: 6px auto 6px auto;
+}
