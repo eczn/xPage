@@ -1,0 +1,18 @@
+ /*svg.css*/
+ /*  紫色  */
+.svg-purple {
+	/*svg本来就是紫色*/
+}
+
+/*  橙色  */
+.svg-orange {
+	filter: hue-rotate(115deg) saturate(4) brightness(1.5);
+	-webkit-filter: hue-rotate(115deg) saturate(4) brightness(1.5);
+}
+
+/*  cyan-blue青色  */
+.svg-cyan {
+	filter: hue-rotate(276deg) saturate(3.5) brightness(1.6);
+	-webkit-filter: hue-rotate(276deg) saturate(3.5) brightness(1.6);
+}
+
