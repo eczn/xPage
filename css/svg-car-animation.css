@@ -2,7 +2,7 @@
 
 .svg-car {
 	position: absolute;
-	right: -100%; 
+	left: -10%; 
 	bottom: 8%; 
 	width: 10%;
 	transform: translate3d(0, 0, 0);
@@ -100,24 +100,27 @@
 
 @-webkit-keyframes svg-car-go {
 	0% {
-		right: -10%; 
+		left: -10%; 
 		transform: translateZ(0);
 		-webkit-transform: rotate(0deg);
 		-webkit-transform-origin: 50% -300%;
 	}
-	22% {
-		right: 45%; 
+	24% {
+		left: 45%; 
 transform: translateZ(0);
 		-webkit-transform: rotate(0deg);
 		-webkit-transform-origin: 50% -300%;
-	} 78% {
-		right: 45%; transform: translateZ(0);
-		-webkit-transform: rotate(360deg);
+	} 76% {
+		left: 45%; transform: translateZ(0);
+		-webkit-transform: rotate(-360deg);
 		-webkit-transform-origin: 50% -300%;
+		opacity: 1;
 	} 100% {
-		right: 110%; transform: translateZ(0);
-		-webkit-transform: rotate(360deg);
+		left: 90%; transform: translateZ(0);
+		-webkit-transform: rotate(-360deg);
 		-webkit-transform-origin: 50% -300%;
+		opacity: 0;
+		display: none;
 	}
 }
 
