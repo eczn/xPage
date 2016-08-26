@@ -30,6 +30,7 @@ function successInit(){
 $(document).ready(function(){
 
 	$(".sent button").click(function(){
+
 		
 
 		var name= $(".Name").val();
