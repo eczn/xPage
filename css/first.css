@@ -1,0 +1,14 @@
+#first-text {
+	position: relative;
+	z-index: 10;
+	color: rgb(254, 133, 86);
+	text-shadow: 0 4px 2px rgb(119,80,65); 
+	text-align: right;
+	margin-top: -0.5em;
+	margin-right: 0.5em;
+}
+
+#first-pic {
+	position: relative;
+	margin: 5%;
+}
