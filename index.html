@@ -18,11 +18,18 @@
 	<script type="text/javascript" src="js/xbtn.js"></script>
 	<script type="text/javascript" src="js/form.js"></script>
     <script type="text/javascript" src="js/carema.js"></script>
+    <script type="text/javascript" src="js/jP_fall.js"></script>
 </head>
 <body>
+	<div class="svg-test">
+		<!-- <img src="image/vector/circle.svg" alt=""> -->
+	</div>
+	
+	<canvas style="position: fixed;width: 100%;z-index: 999;background-color: #fff;" id="code-wall"></canvas>
+
 	<div id="success">
 		<span></span>
-		<img id="welcome-pic" src="image/welcome/001.png">
+		<img id="welcome-pic" src="image/welcome/001.png" width="100">
 		<div class="msg">
 			<p>我们真诚地欢迎你</p>
 			<p>加入宣策 以此开始你</p>
@@ -44,6 +51,7 @@
 	<!-- <center style="font-size: 40px;" >↑</center> -->
 
 
+	<img style="margin: 5%;" src="image/first.png" width="90%" alt="welcome">
 
 	<br/><br/><br/><br/>
 	
@@ -192,6 +200,13 @@ var xPageForm = new successInit();
 			myMemu = new memuInit("memu-btn","memu"),
 			posterAnimate = new Movie();
 			// xTouchCore = new moubileTouch(true);
+
+
+		var myCodeWall = new codeWallInit('code-wall');
+
+		$("#code-wall").click(function(){
+			myCodeWall.draw(0);
+		});
 
 		// setTimeout(function(){
 		// 	console.log(); 
