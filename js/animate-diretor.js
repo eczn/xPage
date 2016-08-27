@@ -12,7 +12,6 @@ function Movie() {
 		poster_container = $(".poster-container"),
 		margin_auto_str = 0;
 
-
 	var calcAuto = (function(){
 		var auto = $(window).innerWidth(); 
 		auto = (auto-320)/2;
@@ -56,6 +55,11 @@ function Movie() {
 
 	}
 
+	function car(){
+		
+	}
+
 	this.ka = ka; 
+	this.car = car; 
 	this.calcAuto = calcAuto; 
 }
