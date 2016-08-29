@@ -19,24 +19,56 @@
 }
 .first-ps > .msg {
 	position: relative;
-	margin: 5px 40px 300px 40px;
-	text-indent: 1.5em;
+	margin: 5px 30px 30px 30px;
+	/*text-indent: 1.5em;*/
 	/*text-align: center;*/
 }
 
-.first-ps > .msg:after {
-	content: "PS Teach"; 
-	font-family: "serif";
-	color: white;
-	text-indent: 0;
-	text-align: center;
-	font-family: 'Ailerons';
-	background-color: rgb(247, 130, 80);
-	position: absolute;
-	padding: 2em 1em 2em 1em; 
-	left: 0;
-	
-	border-radius: 5em;
+.lr {
+	margin: 30px auto 30px auto;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	border-bottom: 2px solid #BBB;
+	border-top: 2px solid #BBB;
 }
 
+.ur > * {
+	text-indent: 0;
+	text-align: center;
+	font-size: 16px;
+	position: absolute;
+	padding: 2em 1em 2em 1em; 
 
+	/*left: 0;*/
+	
+	border-radius: 5em;
+	/*transition: all 1s;*/
+}
+
+.ur > p {
+	background-color: rgb(247, 130, 80);
+	color: white;
+	font-family: 'Ailerons', "Source Code Pro",consolas,Menlo,"PingFang SC","Microsoft YaHei",monospace;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+
+	background-image: url('../image/vector/circle-white.svg');
+	background-repeat: no-repeat;
+	background-position: -400% -400%;
+	overflow: hidden;
+}
+.ur > p:hover {
+	color: #222;
+	
+	background-position: 0% 0%;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	
+}
+
+.ur:nth-child(even) > p{
+	right: 0;
+}
+.ur:nth-child(odd) > div {
+	right: 0;
+}

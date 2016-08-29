@@ -144,7 +144,7 @@ body {
 	-webkit-animation-timing-function: ease-in-out;
 
 }
-.msg p{
+.msg p {
 	display: inline;
 }
 .msg p:after {
