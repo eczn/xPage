@@ -13,3 +13,30 @@
 	position: relative;
 	margin: 5%;
 }
+
+.first-ps > .psicon {
+	margin: 30px auto 5px auto; 
+}
+.first-ps > .msg {
+	position: relative;
+	margin: 5px 40px 300px 40px;
+	text-indent: 1.5em;
+	/*text-align: center;*/
+}
+
+.first-ps > .msg:after {
+	content: "PS Teach"; 
+	font-family: "serif";
+	color: white;
+	text-indent: 0;
+	text-align: center;
+	font-family: 'Ailerons';
+	background-color: rgb(247, 130, 80);
+	position: absolute;
+	padding: 2em 1em 2em 1em; 
+	left: 0;
+	
+	border-radius: 5em;
+}
+
+
