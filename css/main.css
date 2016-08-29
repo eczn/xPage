@@ -12,6 +12,11 @@ body {
 	overflow-x: hidden;
 }
 
+@font-face {
+	font-family: Ailerons;
+	src: url('Ailerons.ttf');
+}
+
 .nav {
 	z-index: 989;
 	/*position: absolute;*/
