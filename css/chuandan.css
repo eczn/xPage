@@ -9,8 +9,8 @@
 	height: 280px;
 	border-radius: 2px;
 	position: relative;
-	/*background-color: rgb(220,230,243);*/
 	margin-left: auto;
+	margin-top: 40px;
 }
 .computer{
 	width: 135px;
@@ -31,8 +31,6 @@
 	font-family: "微软雅黑","consolas","黑体"; 
 	font-size: 16px;
 	color: #656363;
-	/*margin-top: -50%;*/
-	/*margin-left: 5%;*/
 	width: 50%;
 }
 .red_back{
@@ -40,18 +38,18 @@
 	height: 7px;
 	border-radius: 2px;
 	position: relative;
-	margin: 0 10% 0 auto;
+	margin: 0 auto;
 	background-color: #fe8556;
 }
-
 .PS-chuandan {
 	position: absolute;
-	width: 320px;
-	height: 160px;
+	width: 440px;
+	height: 253px;
 	z-index: -10;
-	top: -160px;
+	top: -260px;
 	background-color: rgb(220, 230, 243);
 	overflow: visible;
+	border-radius: 8px;
 }
 .PS-chuandan > p {
 	font-size: 50px;
@@ -66,13 +64,11 @@
 	-o-transform: rotate(-15deg);
 	-ms-transform: rotate(-15deg);
 }
-
 .chuandan-intro {
 	position: absolute;
-	margin-top: 40px;
+	margin: 80px 5px 40px 5px;
 	right: 124px;
 	font-family: "微软雅黑","consolas","黑体"; 
-	font-weight: normal;
 	color: rgb(100, 100, 100);
 
 }
@@ -84,4 +80,5 @@
 .chuandan-intro > .text {
 	font-size: 16px; 
 	margin: 0 4px 0 4px;
+	/*width: 200px;*/
 }
