@@ -4,11 +4,12 @@
 	overflow-x:hidden; 
 }
 .blue_back{
+	position: relative;
 	width: 80%;
 	height: 280px;
 	border-radius: 2px;
 	position: relative;
-	background-color: #e6f0fd;
+	/*background-color: rgb(220,230,243);*/
 	margin-left: auto;
 }
 .computer{
@@ -27,12 +28,12 @@
 }
 .word{
 	position: absolute;
-	font-family: "微软雅黑";
-	font-size: 12px;
+	font-family: "微软雅黑","consolas","黑体"; 
+	font-size: 16px;
 	color: #656363;
-	margin-top: -50%;
-	margin-left: 5%;
-
+	/*margin-top: -50%;*/
+	/*margin-left: 5%;*/
+	width: 50%;
 }
 .red_back{
 	width: 58%;
@@ -41,4 +42,46 @@
 	position: relative;
 	margin: 0 10% 0 auto;
 	background-color: #fe8556;
+}
+
+.PS-chuandan {
+	position: absolute;
+	width: 320px;
+	height: 160px;
+	z-index: -10;
+	top: -160px;
+	background-color: rgb(220, 230, 243);
+	overflow: visible;
+}
+.PS-chuandan > p {
+	font-size: 50px;
+	position: absolute;
+	bottom: -10px;
+	left: 80px;
+	color: white;
+	font-weight: bold;
+	transform: rotate(-15deg);
+	-webkit-transform: rotate(-15deg);
+	-moz-transform: rotate(-15deg);
+	-o-transform: rotate(-15deg);
+	-ms-transform: rotate(-15deg);
+}
+
+.chuandan-intro {
+	position: absolute;
+	margin-top: 40px;
+	right: 124px;
+	font-family: "微软雅黑","consolas","黑体"; 
+	font-weight: normal;
+	color: rgb(100, 100, 100);
+
+}
+.chuandan-intro > .title {
+	font-size: 20px;
+	text-shadow: 0 0 2px #BBB;
+	margin: 4px;
+}
+.chuandan-intro > .text {
+	font-size: 16px; 
+	margin: 0 4px 0 4px;
 }
