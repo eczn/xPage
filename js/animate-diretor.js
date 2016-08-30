@@ -62,7 +62,7 @@ function Movie() {
 
 function Car_Animate_Diretor(){
 	var cars = $(".svg-car"),
-	var number = 1;
+		number = 1;
 
 	function car(){
 		cars.each(function(){
