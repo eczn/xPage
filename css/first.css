@@ -4,6 +4,8 @@
 	color: rgb(254, 133, 86);
 	text-shadow: 0 4px 2px rgb(119,80,65); 
 	text-align: right;
+	font-family: 'Ailerons', "Source Code Pro",consolas,Menlo,"PingFang SC","Microsoft YaHei",monospace;
+	font-size: 40px;
 	margin-top: -0.5em;
 	margin-right: 0.5em;
 	margin-bottom: 0.5em;
