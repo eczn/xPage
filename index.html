@@ -56,19 +56,19 @@
 
 	<div class="firstContainer">
 		<img id="first-pic" src="image/first.png" width="90%" alt="welcome">
-		<img class="svg-car-1 svg-car" src="image/vector/circle-purple.svg" alt="">
-		<img class="svg-car-2 svg-car" src="image/vector/circle-orange.svg" alt="">
-		<img class="svg-car-3 svg-car" src="image/vector/circle-cyan.svg" alt="">
-		<img class="svg-car-4 svg-car" src="image/vector/circle-purple.svg" alt="">
-		<img class="svg-car-5 svg-car" src="image/vector/circle-cyan.svg" alt="">
-		<img class="svg-car-6 svg-car" src="image/vector/circle-orange.svg" alt="">
-		<img class="svg-car-7 svg-car" src="image/vector/circle-purple.svg" alt="">
-		<img class="svg-car-8 svg-car" src="image/vector/circle-orange.svg" alt="">
-		<img class="svg-car-9 svg-car" src="image/vector/circle-cyan.svg" alt="">
-		<img class="svg-car-10 svg-car" src="image/vector/circle-orange.svg" alt="">
-		<img class="svg-car-11 svg-car" src="image/vector/circle-cyan.svg" alt="">
-		<img class="svg-car-12 svg-car" src="image/vector/circle-purple.svg" alt=""> 
-		<img class="svg-car-13 svg-car" style="opacity: 1;" src="image/vector/circle-purple.svg">
+		<img class="svg-car" src="image/vector/circle-purple.svg" alt="">
+		<img class="svg-car" src="image/vector/circle-orange.svg" alt="">
+		<img class="svg-car" src="image/vector/circle-cyan.svg" alt="">
+		<img class="svg-car" src="image/vector/circle-purple.svg" alt="">
+		<img class="svg-car" src="image/vector/circle-cyan.svg" alt="">
+		<img class="svg-car" src="image/vector/circle-orange.svg" alt="">
+		<img class="svg-car" src="image/vector/circle-purple.svg" alt="">
+		<img class="svg-car" src="image/vector/circle-orange.svg" alt="">
+		<img class="svg-car" src="image/vector/circle-cyan.svg" alt="">
+		<img class="svg-car" src="image/vector/circle-orange.svg" alt="">
+		<img class="svg-car" src="image/vector/circle-cyan.svg" alt="">
+		<img class="svg-car" src="image/vector/circle-purple.svg" alt=""> 
+		<img class="svg-car" style="opacity: 1;" src="image/vector/circle-purple.svg">
 	</div>
 	
 	<h1 id="first-text">WE WANT YOU</h1>
@@ -224,7 +224,7 @@ var xPageForm = new successInit();
 
 		var myCodeWall = new wallInit('code-wall');
 
-		$("*").click(function(){}); 
+		$(".ur").click(function(){}); 
 
 		$("#code-wall").click(function(){
 			myCodeWall.draw(0); 
@@ -251,9 +251,12 @@ var xPageForm = new successInit();
 
 		myClock.jClocking();
 
+		var mySvgCar = new Car_Animate_Diretor();
+		setTimeout(mySvgCar.car,3000);
 		// $(".animate-screen").trigger("mouseenter"); 
 		$("#black").click(function(){
 			posterAnimate.ka();
+
 			this.onclick = function(){return false}; 
 
 			

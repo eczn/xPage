@@ -21,84 +21,83 @@
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-duration: 1.5s;
 	-webkit-animation-timing-function: linear;
-	-webkit-animation-delay: 3s;
 }
 .svg-car-2 {
 	-webkit-animation-name: svg-car-go;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-duration: 1.5s;
 	-webkit-animation-timing-function: linear;
-	-webkit-animation-delay: 3.1s;
+	-webkit-animation-delay: .1s;
 }
 .svg-car-3 {
 	-webkit-animation-name: svg-car-go;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-duration: 1.5s;
 	-webkit-animation-timing-function: linear;
-	-webkit-animation-delay: 3.2s;
+	-webkit-animation-delay: .2s;
 }
 .svg-car-4 {
 	-webkit-animation-name: svg-car-go;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-duration: 1.5s;
 	-webkit-animation-timing-function: linear;
-	-webkit-animation-delay: 3.3s;
+	-webkit-animation-delay: .3s;
 }
 .svg-car-5 {
 	-webkit-animation-name: svg-car-go;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-duration: 1.5s;
 	-webkit-animation-timing-function: linear;
-	-webkit-animation-delay: 3.4s;
+	-webkit-animation-delay: .4s;
 }
 .svg-car-6 {
 	-webkit-animation-name: svg-car-go;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-duration: 1.5s;
 	-webkit-animation-timing-function: linear;
-	-webkit-animation-delay: 3.5s;
+	-webkit-animation-delay: .5s;
 }
 .svg-car-7 {
 	-webkit-animation-name: svg-car-go;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-duration: 1.5s;
 	-webkit-animation-timing-function: linear;
-	-webkit-animation-delay: 3.6s;
+	-webkit-animation-delay: .6s;
 }
 .svg-car-8 {
 	-webkit-animation-name: svg-car-go;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-duration: 1.5s;
 	-webkit-animation-timing-function: linear;
-	-webkit-animation-delay: 3.7s;
+	-webkit-animation-delay: .7s;
 }
 .svg-car-9 {
 	-webkit-animation-name: svg-car-go;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-duration: 1.5s;
 	-webkit-animation-timing-function: linear;
-	-webkit-animation-delay: 3.8s;
+	-webkit-animation-delay: .8s;
 }
 .svg-car-10 {
 	-webkit-animation-name: svg-car-go;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-duration: 1.5s;
 	-webkit-animation-timing-function: linear;
-	-webkit-animation-delay: 3.9s;
+	-webkit-animation-delay: .9s;
 }
 .svg-car-11 {
 	-webkit-animation-name: svg-car-go;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-duration: 1.5s;
 	-webkit-animation-timing-function: linear;
-	-webkit-animation-delay: 4s;
+	-webkit-animation-delay: 1s;
 }
 .svg-car-12 {
 	-webkit-animation-name: svg-car-go;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-duration: 1.5s;
 	-webkit-animation-timing-function: linear;
-	-webkit-animation-delay: 4.1s;
+	-webkit-animation-delay: 1.1s;
 }
 
 @-webkit-keyframes svg-car-go {

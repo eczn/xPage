@@ -55,11 +55,23 @@ function Movie() {
 
 	}
 
+	this.ka = ka; 
+	
+	this.calcAuto = calcAuto;
+}
+
+function Car_Animate_Diretor(){
+	var cars = $(".svg-car"),
+	var number = 1;
+
 	function car(){
-		
+		cars.each(function(){
+			// this.addClass("svg-car"+number); 
+			// console.log(this.className);
+			this.className += " svg-car-"+number;
+			number++; 
+		});
 	}
 
-	this.ka = ka; 
-	this.car = car; 
-	this.calcAuto = calcAuto; 
+	this.car = car;
 }
