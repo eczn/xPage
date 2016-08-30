@@ -63,11 +63,9 @@
 	height: 160px;
 	
 	overflow: hidden; 
-	-webkit-filter: blur(10px);
+	/*-webkit-filter: blur(10px);*/
 	/*-webkit-filter: blur(5px);*/
 }
-
-
 
 .animate-screen:hover {
 	transition: margin 1s;
