@@ -27,11 +27,28 @@
 }
 
 .lr {
+	position: relative;
 	margin: 30px auto 30px auto;
 	padding-top: 16px;
 	padding-bottom: 16px;
-	border-bottom: 2px solid #AAA;
-	border-top: 2px solid #AAA;
+	border-bottom: 2px solid rgb(247, 130, 80);
+	border-top: 2px solid rgb(247, 130, 80);
+	border-radius: 150px 150px 0 0;
+}
+
+.lr-title {
+	position: absolute;
+	top: -1em;
+	line-height: 1.4em;
+	padding-bottom: 4px;
+	width: 30%;
+	left: 35%;
+	text-align: center;
+	color: white;
+	background-color: rgb(247, 130, 80);
+	font-size: 20px;
+	font-family: 'Ailerons','黑体';
+	border-radius: 5px;
 }
 
 .ur > * {
