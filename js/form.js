@@ -28,18 +28,12 @@ function successInit(){
 
 
 $(document).ready(function(){
-
 	$(".sent button").click(function(){
-
-		
-
 		var name= $(".Name").val();
 		var phone= $(".Phone").val();
 		var intro= $(".Intro").val();
 		verify(name,phone,intro);
 	});
-
-
 });
 
 //verify the form

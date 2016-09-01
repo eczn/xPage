@@ -26,18 +26,6 @@
 <body>
 	<canvas style="position: absolute;width: 100%;z-index: -10;background-color: #fff;top: 0;left: 0;" id="code-wall"></canvas>
 
-	<div id="success">
-		<span></span>
-		<img id="welcome-pic" src="image/welcome/001.png" width="100">
-		<div class="msg">
-			<p>我们真诚地欢迎你</p>
-			<p>加入宣策 以此开始你</p>
-			<p>大学生活的不平凡</p>
-		</div>
-		<img id="ps-icon" src="image/welcome/psicon.png" width="60">
-		<div id="success-return" class="return"><h1>←</h1></div> 
-	</div>
-
 	<div class="nav">
 		<p>招贤纳士</p>
 		<h3>加油开发哇</h3>
@@ -93,8 +81,6 @@
 
 		</div>
 	</div>
-
-	<hr/>
 
 	<div class="poster-intro">
 		<div class="title">&gt;所见即所得</div>
@@ -171,7 +157,7 @@
 	<!-- <div class="circle"></div> -->
 	<div class="form">
 	 <div class="form_back">
-	  <div class="title">计算学院学生会宣策部报名表</div>
+	  <div class="title">计算机学院学生会宣策部报名表</div>
 	  <div class="block">
 	  	<div class="title1 name">姓名:</div>
 	  	<div><input type="text" class="frame Name"></input></div>
@@ -179,10 +165,10 @@
       <div class="block">
       	<div class="sex title1 ">
              <label class="uctitle">性别:</label>
-             <input type="radio" id="Male" name="UserSex" value="男"
+             <input type="radio" id="Male" name="UserSex" value="1"
              checked="checked"></input>
              <label class="ucsex" for="Male">男</label>         
-             <input type="radio" id="Female" name="UserSex" value="女"></input>
+             <input type="radio" id="Female" name="UserSex" value="0"></input>
              <label class="ucsex" for="Female">女</label>
            </div>
       </div>
@@ -211,6 +197,17 @@
 		</div>
 	</div>
 
+	<div id="success">
+		<span></span>
+		<img id="welcome-pic" src="image/welcome/001.png" width="100">
+		<div class="msg">
+			<p>我们真诚地欢迎你</p>
+			<p>加入宣策 以此开始你</p>
+			<p>大学生活的不平凡</p>
+		</div>
+		<img id="ps-icon" src="image/welcome/psicon.png" width="60">
+		<div id="success-return" class="return"><h1>←</h1></div> 
+	</div>
 
 
 	<div class="return"><h1>←</h1></div> 
@@ -220,6 +217,9 @@
 <script type="text/javascript">
 
 var xPageForm = new successInit(); 
+
+
+console.log($("input:checked").val());
 
 	$(document).ready(function(){
 		var myClock = new jClock('clock'),
