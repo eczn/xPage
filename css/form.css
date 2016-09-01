@@ -5,6 +5,13 @@
 	margin-bottom: 20px;
 	margin-top: 20px;
 }
+.form input {
+	text-indent: 0.5em;
+}
+.form textarea {
+	text-indent: 0.5em;
+}
+
 .form_back{
 	width: 284px;
 	margin: auto;
