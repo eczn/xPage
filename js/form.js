@@ -45,13 +45,13 @@ function verify(name,phone,intro,qq,email,sex) {
 		return; 
 	} 
 
+
+	var str = "未填写";
 	if (qq == "") {
-		alert("!qq!");
-		qq = "dis-input"; 
+		qq = 0;
 	}
 	if (email == ""){
-		alert("!email!");
-		email = "dis-input";
+		email = 0;
 	}
 	$.ajax({
 		type: 'post',
