@@ -1,19 +1,12 @@
-
 // xPageForm a obj to achieve "WELCOME" when click JOIN US and SUCCEED. 
-
 function successInit(){
-	// 点下join us 成功的时候 onshow置于true，否则置于false，用来标识是否打开了welcome界面
 	var onshow = false; 
 	var $success = $("#success"); 
-
 	$success.css("display","none"); 
-
-	// when clicking join us
 	function click(){
 		if (onshow){
 			// from true to false;
 			onshow = false;
-
 			$success.css("display","none"); 
 		} else {
 			// from false to true;
@@ -21,23 +14,24 @@ function successInit(){
 			$success.css("display","block"); 
 		}
 	}
-
 	this.click = click;
 }
-
-
 
 $(document).ready(function(){
 	$(".sent button").click(function(){
 		var name= $(".Name").val();
 		var phone= $(".Phone").val();
 		var intro= $(".Intro").val();
-		verify(name,phone,intro);
+		var qq = $(".QQ").val();
+		var email = $(".Email").val();
+		var sex = $("input:checked").val(); 
+
+		// console.log([name,phone,intro,qq,email,sex]);
+		verify(name,phone,intro,qq,email,sex);
 	});
 });
 
-//verify the form
-function verify(name,phone,intro) {
+function verify(name,phone,intro,qq,email,sex) {
 	if (phone.length != 11 || !(/^1[3|4|5|7|8]\d{9}$/.test(phone))){
 		alert("请输入有效的手机号码！");
 		return; 
@@ -45,8 +39,12 @@ function verify(name,phone,intro) {
 		alert("个人介绍似乎有点长了...");
 		return; 
 	} else if (name.length > 10) {
-		alert("名字填写错误");
+		alert("名字很长？");
 		return; 
+	} else if (qq.length == "") {
+		qq = "ta没填这个.."; 
+	} else if (email.length == ""){
+		email = "ta没填这个..";
 	}
 	$.ajax({
 		type: 'post',
@@ -55,7 +53,10 @@ function verify(name,phone,intro) {
 		data: {
 			name: name,
 			phone: phone,
-			intro: intro
+			intro: intro,
+			qq: qq,
+			email: email,
+			sex: sex
 		},
 		dataType: 'json',
 		success: function(data){
@@ -68,7 +69,7 @@ function verify(name,phone,intro) {
 		error: function(data){
 			console.warn("faild");
 			console.log("报名失败！ ");
-			alert("报名失败！ "); 
+			alert("报名失败！请重试，如果问题依然存在 请将您的报名信息发送邮箱至 eczn@moebaka.com 或者编辑短信发送至 15625058135"); 
 			console.log(data); 
 		}
 	});
