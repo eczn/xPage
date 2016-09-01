@@ -126,16 +126,16 @@ body {
 
 .msg span{
 	content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-width: 6px;
-    overflow: hidden;
-    border-color: transparent transparent transparent #FFF;
-    border-style: dotted dotted dotted solid;
-    border-radius: 2px;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-width: 6px;
+	overflow: hidden;
+	border-color: transparent transparent transparent #FFF;
+	border-style: dotted dotted dotted solid;
+	border-radius: 2px;
 
-	
+
 	-webkit-animation-name: animate-doudong;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
