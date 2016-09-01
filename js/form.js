@@ -41,9 +41,9 @@ function verify(name,phone,intro,qq,email,sex) {
 	} else if (name.length > 10) {
 		alert("名字很长？");
 		return; 
-	} else if (qq.length == "") {
+	} else if (qq.length == undefined) {
 		qq = "dis-input"; 
-	} else if (email.length == ""){
+	} else if (email.length == undefined){
 		email = "dis-input";
 	}
 	$.ajax({
