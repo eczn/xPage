@@ -26,12 +26,14 @@ $(document).ready(function(){
 		var email = $(".Email").val();
 		var sex = $("input:checked").val(); 
 
-		// console.log([name,phone,intro,qq,email,sex]);
+		
 		verify(name,phone,intro,qq,email,sex);
 	});
 });
 
 function verify(name,phone,intro,qq,email,sex) {
+	console.log('qq:'+qq);
+	console.log('email:'+email);
 	if (phone.length != 11 || !(/^1[3|4|5|7|8]\d{9}$/.test(phone))){
 		alert("请输入有效的手机号码！");
 		return; 
@@ -41,9 +43,14 @@ function verify(name,phone,intro,qq,email,sex) {
 	} else if (name.length > 10) {
 		alert("名字很长？");
 		return; 
-	} else if (qq.length == undefined) {
+	} 
+
+	if (qq == "") {
+		alert("!qq!");
 		qq = "dis-input"; 
-	} else if (email.length == undefined){
+	}
+	if (email == ""){
+		alert("!email!");
 		email = "dis-input";
 	}
 	$.ajax({
