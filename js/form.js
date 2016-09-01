@@ -42,9 +42,9 @@ function verify(name,phone,intro,qq,email,sex) {
 		alert("名字很长？");
 		return; 
 	} else if (qq.length == "") {
-		qq = "ta没填这个.."; 
+		qq = "dis-input"; 
 	} else if (email.length == ""){
-		email = "ta没填这个..";
+		email = "dis-input";
 	}
 	$.ajax({
 		type: 'post',
