@@ -3,18 +3,14 @@
 	padding: 0; 
 	margin: 0;
 	font-family: "Source Code Pro",consolas,Menlo,"PingFang SC","Microsoft YaHei",monospace;
-	/*overflow-x: hidden;*/
 }
-
 body {
 	overflow-x: hidden;
 }
-
 @font-face {
 	font-family: Ailerons;
 	src: url('Ailerons.ttf');
 }
-
 .nav {
 	z-index: 989;
 	/*position: absolute;*/
