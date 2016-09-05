@@ -16,25 +16,13 @@
 	<link rel="stylesheet" type="text/css" href="css/svg-car-animation.css">
 	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 	<script type="text/javascript" src="js/animate-diretor.js"></script>
-	<script type="text/javascript" src="js/jClock.js"></script>
+	<!-- <script type="text/javascript" src="js/jClock.js"></script> -->
 	<script type="text/javascript" src="js/4Touch.js"></script>
-	<script type="text/javascript" src="js/xbtn.js"></script>
+	<!-- <script type="text/javascript" src="js/xbtn.js"></script> -->
 	<script type="text/javascript" src="js/form.js"></script>
-    <script type="text/javascript" src="js/carema.js"></script>
-    <script type="text/javascript" src="js/jP_fall.js"></script>
+	<script type="text/javascript" src="js/carema.js"></script>
 </head>
 <body>
-	<canvas style="position: absolute;width: 100%;z-index: -10;background-color: #fff;top: 0;left: 0;" id="code-wall"></canvas>
-
-	<div class="nav">
-		<p>招贤纳士</p>
-		<h3>加油开发哇</h3>
-		<h2>加油开发哇</h2>
-		<h1>加油开发哇</h1>
-		<canvas id="clock"></canvas>
-	</div>
-	
-	
 	<div class="firstContainer">
 		<img id="first-pic" src="image/first.png" width="90%" alt="welcome">
 		<img class="svg-car" src="image/vector/circle-purple.svg" alt="">
@@ -61,8 +49,6 @@
 		<img class="psicon" src="image/ps.png" width="60">
 		<div class="msg">
 			<p>　　Photoshop，简称“PS”，主要处理以像素所构成的数字图像。使用其众多的编修与绘图工具，可以有效地进行图片编辑工作。</p>
-
-			
 			<div class="lr">
 				<div class="lr-title">PS技术</div>
 				<div></div>
@@ -76,7 +62,6 @@
 					<div>用PS做海报传单</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 
@@ -142,7 +127,6 @@
 		</div>
 	</div>
 
-
 	<div class="area-display" id="carema">
 		<p id ="animate_content" class="content">以摄影的方式贯穿<br/>整个活动，并在后期进行<br/>照片整理与资源分享</p>
 		<img id="animate_flicker" src="image/carema/flicker.png">
@@ -153,7 +137,6 @@
 	</div>
 
 	<!-- Form -->
-	<!-- <div class="circle"></div> -->
 	<div class="form">
 		<div class="form_back">
 			<div class="title">计算机学院学生会宣策部报名表</div>
@@ -205,13 +188,9 @@
 						<div class="title1 intro">个人介绍:</div>
 						<div><textarea placeholder="写上你的爱好，特长，展示你出色的一方面，不超过250个字" class="frame Intro" rows="10"></textarea></div>
 					</div>
-
-
-
 			</div>
 		</div>
 	</div>
-
 
 	<div class="form">
 	  <div class="sent">
@@ -236,54 +215,25 @@
 			<p>加入宣策 以此开始你</p>
 			<p>大学生活的不平凡</p>
 		</div>
+		<img id="ps-icon" src="image/ps.png" width="60">
 		<img id="ps-icon" src="image/welcome/psicon.png" width="60">
-		<div id="success-return" class="return"><h1>←</h1></div> 
+		<img id="ps-icon" src="image/welcome/psicon.png" width="60">
+
+		<div id="success-return" class="return"><h3>返回</h3></div> 
 	</div>
-
-
-	<div class="return"><h1>←</h1></div> 
-
 </body>
-
 <script type="text/javascript">
-
-var xPageForm = new successInit(); 
-
+	var xPageForm = new successInit(); 
 	$(document).ready(function(){
-		var myClock = new jClock('clock'),
-			myMemu = new memuInit("memu-btn","memu"),
-			posterAnimate = new Movie();
-			// xTouchCore = new moubileTouch(true);
+		var posterAnimate = new Movie();
 
-
-		var myCodeWall = new wallInit('code-wall');
-
-		$(".ur").click(function(){}); 
-
-		$("#code-wall").click(function(){
-			myCodeWall.draw(0); 
-		});
-
-		// setTimeout(function(){
-		// 	console.log(); 
-		// },1000); 
-
-		// $("").click(function(){
-		// 	$("#ddd").trigger("mouseenter"); 
-
-		// }); 
+		$(".ur").click(function(){});
 
 		$("#success-return").click(function(){
 			$("#success").css("display","none");
 		});
 
 		$(".bottom-about").css("height",parseInt($(".bottom-about").css("width"))*0.467+"px");
-
-		$(".nav, #return, #memu-btn").click(function(){
-			// 加了这个iPhone的safari就支持hover了，不知道为啥 真是玄学。。。
-		});
-
-		myClock.jClocking();
 
 		// svg-car
 		var mySvgCar = new Car_Animate_Diretor();
@@ -292,23 +242,9 @@ var xPageForm = new successInit();
 		// $(".animate-screen").trigger("mouseenter"); 
 		$("#black").click(function(){
 			posterAnimate.ka();
-
 			this.onclick = function(){return false}; 
-
-			
 		}); 
 
-		// $("#black").trigger("click");
-		
-		$("#return").click(function(){
-			console.log("click return, hover to here"); 
-		});
-
-		$("#clock").click(function(){
-			$("#ddd").trigger("click"); 
-		}); 
 	}); 
-
-
 </script>
 </html>

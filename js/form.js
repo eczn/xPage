@@ -2,7 +2,7 @@
 function successInit(){
 	var onshow = false; 
 	var $success = $("#success"); 
-	$success.css("display","none"); 
+	$success.css("display","block"); 
 	function click(){
 		if (onshow){
 			// from true to false;
@@ -29,12 +29,9 @@ function addClass(max){
 
 $(document).ready(function(){
 	$(".proSelect").change(function(){
-		//onchange
 		var classNumTable = [4, 4, 2, 6]; 
 		addClass( classNumTable[$(".proSelect > option:selected").attr('position')] );
-		// console.log($(".proSelect > option:selected").attr('position'));
 	});
-
 	$(".sent button").click(function(){
 		var name= $(".Name").val();
 		var phone= $(".Phone").val();
@@ -45,14 +42,11 @@ $(document).ready(function(){
 		var pro = $(".proSelect > option:selected").val();
 		var classNum = $(".classSelect > option:selected").val();
 
-		
 		verify(name,phone,intro,qq,email,sex,pro,classNum);
 	});
 });
 
 function verify(name,phone,intro,qq,email,sex,pro,classNum) {
-	console.log('qq:'+qq);
-	console.log('email:'+email);
 	if (phone.length != 11 || !(/^1[3|4|5|7|8]\d{9}$/.test(phone))){
 		alert("请输入有效的手机号码！");
 		return; 
@@ -62,10 +56,8 @@ function verify(name,phone,intro,qq,email,sex,pro,classNum) {
 	} else if (name.length > 10) {
 		alert("名字很长？");
 		return; 
-	} 
+	}
 
-
-	var str = "未填写";
 	if (qq == "") {
 		qq = 0;
 	}
@@ -95,8 +87,7 @@ function verify(name,phone,intro,qq,email,sex,pro,classNum) {
 			xPageForm.click(); 
 		},
 		error: function(data){
-			console.warn("faild");
-			console.log("报名失败！ ");
+			console.warn("faild, 报名失败！ ");
 			alert("报名失败！请重试，如果问题依然存在 请将您的报名信息发送邮箱至 eczn@moebaka.com 或者编辑短信发送至 15625058135"); 
 			console.log(data); 
 		}
