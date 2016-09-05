@@ -5,6 +5,10 @@
 	margin-bottom: 20px;
 	margin-top: 20px;
 }
+
+.form * {
+	font-family: "黑体"; 
+}
 .form input {
 	text-indent: 0.5em;
 }
@@ -30,10 +34,12 @@
 	font-family: "微软雅黑";
 	font-size: 16px;
 	color:#7678b5;
-	margin-left: -10px;
+	/*margin-left: -10px;*/
 }
+
+/*
 .name{
-	margin-left: -220px;
+	margin-left: -13.5em;
 }
 .sex{
 	margin-left: -138px;
@@ -57,7 +63,7 @@
 .proSelect {
 	margin-left: -38px;
 }
-
+*/
 .frame{
 	min-width: 255px;
 	min-height: 20px;
