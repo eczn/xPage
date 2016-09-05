@@ -16,7 +16,7 @@ body {
 	width: 100%;
 	height: 30px;
 	padding-bottom: 2px;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	background-color: rgb(220,230,243);
 	color: #7678b5; 
@@ -27,7 +27,7 @@ body {
 }
 
 .nav-memu-open {
-	height: 400px;
+	height: 420px;
 	font-size: 24px;
 	-webkit-transition: all 1s;
 }
@@ -41,7 +41,7 @@ body {
 }
 .memu-btn-touch {
 	height: 30px;
-	
+	opacity: 0.4;
 	-webkit-transform-origin: 20px 100px;
 	-webkit-transform: rotate(-10deg);
 	-webkit-transition: all .3s;
@@ -65,8 +65,9 @@ body {
 }
 
 .nav:after{
-	content: "←↑→↓";
-	font-size: 64px;
+	content: "**** Σ(°Д°; ****";
+	text-align: center;
+	font-size: 32px;
 	display: block;
 	width: 100%;
 	/*position: absolute;*/
