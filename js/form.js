@@ -17,7 +17,24 @@ function successInit(){
 	this.click = click;
 }
 
+function addClass(max){
+	var t = $(".classSelect"); 
+	var i = 0;
+	t.empty(); 
+	t.append("<option value='0'>选择班别</option>"); 
+	for (i=1;i<=max;i++){
+		t.append("<option class='o' value='"+i+"'>"+i+"</option>");
+	}
+}
+
 $(document).ready(function(){
+	$(".proSelect").change(function(){
+		//onchange
+		var classNumTable = [4, 4, 2, 6]; 
+		addClass( classNumTable[$(".proSelect > option:selected").attr('position')] );
+		// console.log($(".proSelect > option:selected").attr('position'));
+	});
+
 	$(".sent button").click(function(){
 		var name= $(".Name").val();
 		var phone= $(".Phone").val();
@@ -25,13 +42,15 @@ $(document).ready(function(){
 		var qq = $(".QQ").val();
 		var email = $(".Email").val();
 		var sex = $("input:checked").val(); 
+		var pro = $(".proSelect > option:selected").val();
+		var classNum = $(".classSelect > option:selected").val();
 
 		
-		verify(name,phone,intro,qq,email,sex);
+		verify(name,phone,intro,qq,email,sex,pro,classNum);
 	});
 });
 
-function verify(name,phone,intro,qq,email,sex) {
+function verify(name,phone,intro,qq,email,sex,pro,classNum) {
 	console.log('qq:'+qq);
 	console.log('email:'+email);
 	if (phone.length != 11 || !(/^1[3|4|5|7|8]\d{9}$/.test(phone))){
@@ -63,7 +82,9 @@ function verify(name,phone,intro,qq,email,sex) {
 			intro: intro,
 			qq: qq,
 			email: email,
-			sex: sex
+			sex: sex,
+			pro: pro,
+			classNum: classNum
 		},
 		dataType: 'json',
 		success: function(data){
