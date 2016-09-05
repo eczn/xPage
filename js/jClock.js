@@ -1,7 +1,5 @@
 /*
  *  jClock.js :  display time on canvas. 
- *
- *
  */
 
 "use strict"; 
