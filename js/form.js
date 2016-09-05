@@ -2,7 +2,7 @@
 function successInit(){
 	var onshow = false; 
 	var $success = $("#success"); 
-	$success.css("display","block"); 
+	$success.css("display","none"); 
 	function click(){
 		if (onshow){
 			// from true to false;

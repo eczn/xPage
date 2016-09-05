@@ -18,12 +18,25 @@
 	<script type="text/javascript" src="js/animate-diretor.js"></script>
 	<!-- <script type="text/javascript" src="js/jClock.js"></script> -->
 	<script type="text/javascript" src="js/4Touch.js"></script>
-	<!-- <script type="text/javascript" src="js/xbtn.js"></script> -->
+	<script type="text/javascript" src="js/xbtn.js"></script>
 	<script type="text/javascript" src="js/form.js"></script>
 	<script type="text/javascript" src="js/carema.js"></script>
 </head>
 <body>
-	<div class="firstContainer">
+	<div class="nav">
+		<div class="memu"><img src="image/memu.png" height="22" alt=""></div>
+		<center><h3>招贤纳士</h3></center>
+		<a class="nav-a" href="#top">顶部</a><hr>
+		<a class="nav-a" href="#ps-intro">关于PS</a><hr>
+		<a class="nav-a" href="#ps-animate">一张海报</a><hr>
+		<a class="nav-a" href="#camara-intro">摄影介绍</a><hr>
+		<a class="nav-a" href="#camara-animate">摄影演示</a><hr>
+		<a class="nav-a" href="#join-us-a">加入我们</a><hr>
+		<a class="nav-a" href="#about-us-a">关于开发团队</a><hr>
+	</div>
+
+	<div class="a-target" id="top"></div>
+	<div class="firstContainer" >
 		<img id="first-pic" src="image/first.png" width="90%" alt="welcome">
 		<img class="svg-car" src="image/vector/circle-purple.svg" alt="">
 		<img class="svg-car" src="image/vector/circle-orange.svg" alt="">
@@ -42,6 +55,7 @@
 	
 	<h1 id="first-text">WE WANT YOU</h1>
 	
+	<div class="a-target" id="ps-intro"></div>
 	<div class="fir-3circle first-ps">
 		<img src="image/vector/circle-purple.svg" width="45" />
 		<img src="image/vector/circle-orange.svg" width="30" />
@@ -64,7 +78,8 @@
 			</div>
 		</div>
 	</div>
-
+	
+	<div class="a-target" id="ps-animate"></div>
 	<div class="poster-intro">
 		<div class="title">&gt;所见即所得</div>
 		<p class="text">海报被用于宣传，且是最必要的宣传方式</p>
@@ -100,6 +115,7 @@
 	</div>
 	<span style="position: relative;"><div class="PS-chuandan"><p>PS</p></div></span>
 
+	<div class="a-target" id="camara-intro"></div>
 	<div class="fir-3circle first-ps">
 		<img src="image/vector/circle-purple.svg" width="45" />
 		<img src="image/vector/circle-orange.svg" width="30" />
@@ -127,6 +143,7 @@
 		</div>
 	</div>
 
+	<div class="a-target" id="camara-animate"></div>
 	<div class="area-display" id="carema">
 		<p id ="animate_content" class="content">以摄影的方式贯穿<br/>整个活动，并在后期进行<br/>照片整理与资源分享</p>
 		<img id="animate_flicker" src="image/carema/flicker.png">
@@ -137,6 +154,7 @@
 	</div>
 
 	<!-- Form -->
+	<div class="a-target" id="join-us-a"></div>
 	<div class="form">
 		<div class="form_back">
 			<div class="title">计算机学院学生会宣策部报名表</div>
@@ -198,6 +216,7 @@
 	  </div>
     </div>
 
+	<div class="a-target" id="about-us-a"></div>
 	<div class="bottom-about">
 		<img src="image/bottom.png">
 		<div class="msg">
@@ -226,6 +245,13 @@
 	var xPageForm = new successInit(); 
 	$(document).ready(function(){
 		var posterAnimate = new Movie();
+
+		// btn, target, openClass, closeClass
+		var myMemu = memuInit('memu', 'nav', 'nav-memu-open', 2); 
+		// $(".memu").click(function(){
+		// 	//.nav-memu-open
+		// 	$(".nav").addClass("nav-memu-open"); 
+		// });
 
 		$(".ur").click(function(){});
 

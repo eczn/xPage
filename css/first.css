@@ -51,7 +51,6 @@
 	font-size: 18px;
 	font-family: 'Ailerons','黑体';
 	border-radius: 5px;
-
 }
 
 .ur > * {
@@ -60,13 +59,8 @@
 	font-size: 16px;
 	position: absolute;
 	padding: 1.9em 1em 1.9em 1em; 
-
-	/*left: 0;*/
-	
 	border-radius: 5em;
-	/*transition: all 1s;*/
 }
-
 .ur > p {
 	background-color: rgb(247, 130, 80);
 	color: white;
